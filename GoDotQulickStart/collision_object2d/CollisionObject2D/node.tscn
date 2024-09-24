@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://bu8kchfq4cmg0"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_f7wss"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ckou7"]
+size = Vector2(283, 35)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p481x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wcf43"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+process_mode = 4
+disable_mode = 2
+input_pickable = true
+physics_material_override = SubResource("PhysicsMaterial_f7wss")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(314, 303)
+rotation = -0.265173
+shape = SubResource("RectangleShape2D_ckou7")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(190, 273)
+scale = Vector2(-2.42096, 3.978)
+shape = SubResource("CapsuleShape2D_p481x")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+process_mode = 4
+disable_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(332, 200)
+shape = SubResource("CircleShape2D_wcf43")

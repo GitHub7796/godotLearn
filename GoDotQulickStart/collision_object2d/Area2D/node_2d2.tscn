@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://bu4rbsft3qnei"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_i8a4u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6jdud"]
+size = Vector2(387, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2j27c"]
+size = Vector2(17, 58)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7qsa1"]
+size = Vector2(16, 66)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1dnfi"]
+size = Vector2(355, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ils17"]
+size = Vector2(75.761, 70.1041)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(256, 355)
+physics_material_override = SubResource("PhysicsMaterial_i8a4u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(216, 19)
+shape = SubResource("RectangleShape2D_6jdud")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(30.5, -10)
+shape = SubResource("RectangleShape2D_2j27c")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(401, -6)
+shape = SubResource("RectangleShape2D_7qsa1")
+
+[node name="Area2D" type="Area2D" parent="."]
+gravity_space_override = 1
+gravity_point_center = Vector2(0, 0)
+gravity_direction = Vector2(0, 0)
+gravity = 0.0
+linear_damp_space_override = 4
+linear_damp = 0.0
+angular_damp_space_override = 1
+angular_damp = 91.54
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(471, 342)
+shape = SubResource("RectangleShape2D_1dnfi")
+debug_color = Color(0.988235, 0.513726, 0.207843, 0.419608)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(520.429, 213)
+rotation = 0.785398
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_ils17")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8ymq32ufyg4e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jel2a"]
+size = Vector2(651, 66)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cgiv3"]
+radius = 26.163
+height = 134.35
+
+[node name="Node2d" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+constant_angular_velocity = 1.74533
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(507, 411)
+shape = SubResource("RectangleShape2D_jel2a")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(643, 156)
+rotation = -1.0472
+shape = SubResource("CapsuleShape2D_cgiv3")

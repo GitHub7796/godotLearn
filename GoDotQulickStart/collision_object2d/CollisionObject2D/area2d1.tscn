@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bq04o74etv6s3"]
+
+[ext_resource type="Script" path="res://collision_object2d/area2d/area2d1.gd" id="1_attmo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vu25s"]
+size = Vector2(176, 152)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wjx2k"]
+radius = 86.1626
+
+[node name="Node2d_Area2d" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_attmo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(225, 247)
+shape = SubResource("RectangleShape2D_vu25s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(331, 171)
+shape = SubResource("CircleShape2D_wjx2k")
+
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="Area2D" method="_on_mouse_exited"]
