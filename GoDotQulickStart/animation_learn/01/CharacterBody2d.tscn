@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=3 uid="uid://b50yra7nl5ypm"]
+
+[ext_resource type="Texture2D" uid="uid://d3ybmweqaorei" path="res://animation_learn/art/adventurer-Sheet.png" id="1_6et6j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qvht"]
+size = Vector2(27, 31)
+
+[sub_resource type="Animation" id="Animation_cxvva"]
+resource_name = "idle"
+length = 0.4
+loop_mode = 1
+step = 0.0238
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/Sprite2D:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/Sprite2D:vframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kedgr"]
+_data = {
+"idle": SubResource("Animation_cxvva")
+}
+
+[sub_resource type="Animation" id="Animation_sr8m5"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jnlta"]
+_data = {
+"idle": SubResource("Animation_sr8m5")
+}
+
+[node name="CharacterBody2d" type="CharacterBody2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+texture_filter = 1
+texture = ExtResource("1_6et6j")
+hframes = 4
+frame = 2
+region_enabled = true
+region_rect = Rect2(0, 0, 200, 37)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-76, 37)
+shape = SubResource("RectangleShape2D_0qvht")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_kedgr"),
+"player": SubResource("AnimationLibrary_jnlta")
+}

@@ -14,3 +14,10 @@ config/name="GoDotQulickStart"
 run/main_scene="res://3_input_event/input_event.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[input]
+
+jump={
+"deadzone": 0.5,
+"events": []
+}
