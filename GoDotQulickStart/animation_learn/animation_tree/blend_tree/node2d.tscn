@@ -1,7 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://r0bkajd3dtgd"]
+[gd_scene load_steps=14 format=3 uid="uid://r0bkajd3dtgd"]
 
+[ext_resource type="Script" path="res://animation_learn/animation_tree/blend_tree/node_2d.gd" id="1_8pftd"]
 [ext_resource type="Texture2D" uid="uid://2wx0ed1v8cgd" path="res://animation_learn/art/sritesheet running.png" id="1_opqnk"]
-[ext_resource type="Script" path="res://animation_learn/animation_tree/node_2d.gd" id="1_rev85"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sp6sn"]
 
@@ -9,7 +9,7 @@
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -47,9 +47,10 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="Animation_fsssu"]
 resource_name = "down"
 length = 0.4
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -87,9 +88,10 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="Animation_35snc"]
 resource_name = "down"
 length = 0.4
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -127,6 +129,7 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="Animation_3gqnw"]
 resource_name = "right"
 length = 0.4
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -153,7 +156,7 @@ tracks/1/keys = {
 }
 tracks/2/type = "value"
 tracks/2/imported = false
-tracks/2/enabled = false
+tracks/2/enabled = true
 tracks/2/path = NodePath(".:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
@@ -167,9 +170,10 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="Animation_kyvfg"]
 resource_name = "up"
 length = 0.4
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -213,43 +217,36 @@ _data = {
 "up": SubResource("Animation_kyvfg")
 }
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_64hcw"]
-animation = &"down"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_61umw"]
-animation = &"up"
-
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_p5tlg"]
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_l58s0"]
 animation = &"left"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ekkab"]
-animation = &"right"
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ch35g"]
+animation = &"down"
 
-[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_81tvq"]
-blend_point_0/node = SubResource("AnimationNodeAnimation_64hcw")
-blend_point_0/pos = Vector2(0, 1)
-blend_point_1/node = SubResource("AnimationNodeAnimation_61umw")
-blend_point_1/pos = Vector2(0, -1)
-blend_point_2/node = SubResource("AnimationNodeAnimation_p5tlg")
-blend_point_2/pos = Vector2(-1, 0)
-blend_point_3/node = SubResource("AnimationNodeAnimation_ekkab")
-blend_point_3/pos = Vector2(1, 0)
-blend_mode = 1
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_hvgad"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_edyo7"]
+graph_offset = Vector2(-115.364, -63.674)
+nodes/Animation/node = SubResource("AnimationNodeAnimation_ch35g")
+nodes/Animation/position = Vector2(200, 13.3333)
+"nodes/Animation 2/node" = SubResource("AnimationNodeAnimation_l58s0")
+"nodes/Animation 2/position" = Vector2(186.667, 160)
+nodes/Blend2/node = SubResource("AnimationNodeBlend2_hvgad")
+nodes/Blend2/position = Vector2(386.667, 40)
+nodes/output/position = Vector2(586.667, 93.3333)
+node_connections = [&"Blend2", 0, &"Animation", &"Blend2", 1, &"Animation 2", &"output", 0, &"Blend2"]
 
 [node name="Node2d" type="Node2D"]
-script = ExtResource("1_rev85")
+script = ExtResource("1_8pftd")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(127, 67)
-scale = Vector2(3, 3)
 texture = ExtResource("1_opqnk")
 hframes = 4
 region_enabled = true
 region_rect = Rect2(536, 0, 72, 29)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(127, 67)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("CapsuleShape2D_sp6sn")
@@ -260,6 +257,6 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource("AnimationNodeBlendSpace2D_81tvq")
+tree_root = SubResource("AnimationNodeBlendTree_edyo7")
 anim_player = NodePath("../AnimationPlayer")
-parameters/blend_position = Vector2(-0.00568539, -0.273657)
+parameters/Blend2/blend_amount = 1.0

@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bespnq720nt6p"]
+
+[ext_resource type="AudioStream" uid="uid://c8qxy83sjsiep" path="res://music/699497__valenspire__coin_drop_02.wav" id="1_g42r3"]
+
+[node name="Node" type="Node"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_g42r3")
+volume_db = 24.0
+pitch_scale = 0.49
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_g42r3")
+bus = &"New Bus 2"
+
+[node name="Area2D" type="Area2D" parent="."]
+audio_bus_override = true

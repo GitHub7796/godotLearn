@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8" pages="3">
-  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1354" dy="1115" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8" pages="8">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="core">
+    <mxGraphModel dx="2411" dy="1782" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -35,7 +35,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="fivdWIDp-g7g6qTDK8DP-15" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;CanvasItem&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="444" y="358" width="190" height="140" as="geometry" />
+          <mxGeometry x="280" y="359" width="190" height="140" as="geometry" />
         </mxCell>
         <mxCell id="fivdWIDp-g7g6qTDK8DP-16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Node2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="320" y="594" width="190" height="140" as="geometry" />
@@ -49,7 +49,7 @@
             <mxPoint x="-68" y="371" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="fivdWIDp-g7g6qTDK8DP-19" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fivdWIDp-g7g6qTDK8DP-17" edge="1">
+        <mxCell id="fivdWIDp-g7g6qTDK8DP-19" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fivdWIDp-g7g6qTDK8DP-17" edge="1" target="fivdWIDp-g7g6qTDK8DP-15">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="410" y="640" as="sourcePoint" />
             <mxPoint x="540" y="501" as="targetPoint" />
@@ -166,176 +166,242 @@
             <mxPoint x="827" y="1406" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="iwutlD8_GLbPC7XMxFk5-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Timer&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="585" y="350" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="iwutlD8_GLbPC7XMxFk5-1" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Lucida Console;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="iwutlD8_GLbPC7XMxFk5-0" target="fivdWIDp-g7g6qTDK8DP-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="549" y="368" as="sourcePoint" />
+            <mxPoint x="362" y="293" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="NxPvgAtF0f-lNKIYNhJ0" name="动画">
-    <mxGraphModel dx="795" dy="196" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1436" dy="512" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="wcD15CMurTgvJAa5PcHh-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Node2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="wcD15CMurTgvJAa5PcHh-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Node2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="320" y="594" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="wcD15CMurTgvJAa5PcHh-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Sprite2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="wcD15CMurTgvJAa5PcHh-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Sprite2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="460" y="788" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="wcD15CMurTgvJAa5PcHh-3" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Lucida Console;" edge="1" parent="1" source="wcD15CMurTgvJAa5PcHh-2" target="wcD15CMurTgvJAa5PcHh-1">
+        <mxCell id="wcD15CMurTgvJAa5PcHh-3" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Lucida Console;" parent="1" source="wcD15CMurTgvJAa5PcHh-2" target="wcD15CMurTgvJAa5PcHh-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="425" y="604" as="sourcePoint" />
             <mxPoint x="549" y="508" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wcD15CMurTgvJAa5PcHh-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AnimatedSprite2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="wcD15CMurTgvJAa5PcHh-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AnimatedSprite2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="671" y="785" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="wcD15CMurTgvJAa5PcHh-5" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="wcD15CMurTgvJAa5PcHh-4" target="wcD15CMurTgvJAa5PcHh-1">
+        <mxCell id="wcD15CMurTgvJAa5PcHh-5" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="wcD15CMurTgvJAa5PcHh-4" target="wcD15CMurTgvJAa5PcHh-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="319" y="802" as="sourcePoint" />
             <mxPoint x="425" y="744" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wcD15CMurTgvJAa5PcHh-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AnimationMixer&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="wcD15CMurTgvJAa5PcHh-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AnimationMixer&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="243" y="788" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="wcD15CMurTgvJAa5PcHh-7" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="wcD15CMurTgvJAa5PcHh-6" target="wcD15CMurTgvJAa5PcHh-1">
+        <mxCell id="wcD15CMurTgvJAa5PcHh-7" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="wcD15CMurTgvJAa5PcHh-6" target="wcD15CMurTgvJAa5PcHh-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="565" y="798" as="sourcePoint" />
             <mxPoint x="425" y="744" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wcD15CMurTgvJAa5PcHh-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AnimationPlayer&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="wcD15CMurTgvJAa5PcHh-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AnimationPlayer&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="116" y="990" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="wcD15CMurTgvJAa5PcHh-9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AnimationTree&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="wcD15CMurTgvJAa5PcHh-9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AnimationTree&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="346" y="990" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="wcD15CMurTgvJAa5PcHh-10" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="wcD15CMurTgvJAa5PcHh-8" target="wcD15CMurTgvJAa5PcHh-6">
+        <mxCell id="wcD15CMurTgvJAa5PcHh-10" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="wcD15CMurTgvJAa5PcHh-8" target="wcD15CMurTgvJAa5PcHh-6" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="351" y="798" as="sourcePoint" />
             <mxPoint x="425" y="744" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wcD15CMurTgvJAa5PcHh-11" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="wcD15CMurTgvJAa5PcHh-9" target="wcD15CMurTgvJAa5PcHh-6">
+        <mxCell id="wcD15CMurTgvJAa5PcHh-11" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="wcD15CMurTgvJAa5PcHh-9" target="wcD15CMurTgvJAa5PcHh-6" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="221" y="1000" as="sourcePoint" />
             <mxPoint x="340" y="925" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIpkqz7bRkPuC4JM58-H-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;nbsp;AnimationNode&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="785" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qIpkqz7bRkPuC4JM58-H-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;Resource&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="1004" y="494" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qIpkqz7bRkPuC4JM58-H-3" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="qIpkqz7bRkPuC4JM58-H-1" target="qIpkqz7bRkPuC4JM58-H-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="508" y="721" as="sourcePoint" />
+            <mxPoint x="405" y="659" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIpkqz7bRkPuC4JM58-H-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;AnimationNodeBlendTree&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="715" y="981" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qIpkqz7bRkPuC4JM58-H-6" value="&lt;p style=&quot;text-align: left; margin: 4px 0px 0px;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;AnimationNodeStateMachine&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="936" y="981" width="210" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qIpkqz7bRkPuC4JM58-H-7" value="&lt;p style=&quot;text-align: left; margin: 4px 0px 0px;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;AnimationNodeBlendSpace2D&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="1200" y="984" width="213" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qIpkqz7bRkPuC4JM58-H-8" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;...&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="1444.5" y="1024.5" width="43" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="qIpkqz7bRkPuC4JM58-H-9" value="" style="whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="690" y="959" width="818" height="198" as="geometry" />
+        </mxCell>
+        <mxCell id="qIpkqz7bRkPuC4JM58-H-10" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="qIpkqz7bRkPuC4JM58-H-9" target="qIpkqz7bRkPuC4JM58-H-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1109" y="759" as="sourcePoint" />
+            <mxPoint x="1109" y="703" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIpkqz7bRkPuC4JM58-H-11" value="" style="endArrow=none;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qIpkqz7bRkPuC4JM58-H-9" target="wcD15CMurTgvJAa5PcHh-9" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="451" y="1000" as="sourcePoint" />
+            <mxPoint x="348" y="938" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gIAxzh-qxtlDPX4UCAnd-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;SpriteFrames&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="907" y="785" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="gIAxzh-qxtlDPX4UCAnd-2" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gIAxzh-qxtlDPX4UCAnd-1" target="qIpkqz7bRkPuC4JM58-H-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1236" y="776" as="sourcePoint" />
+            <mxPoint x="1109" y="644" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gIAxzh-qxtlDPX4UCAnd-3" value="" style="endArrow=none;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wcD15CMurTgvJAa5PcHh-4" target="gIAxzh-qxtlDPX4UCAnd-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1010" y="779" as="sourcePoint" />
+            <mxPoint x="1109" y="644" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="WkFn8kaiWzhUIPgiOM8n" name="输入">
-    <mxGraphModel dx="2163" dy="1021" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="2101" dy="894" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;b&gt;&lt;br&gt;InputEvent&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;b&gt;&lt;br&gt;InputEvent&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="39" y="92" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;b&gt;&lt;br&gt;InputEventFromWindow&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;b&gt;&lt;br&gt;InputEventFromWindow&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="-128" y="281" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-3" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="VUCCtn55bJqLvP_EbmkE-2" target="VUCCtn55bJqLvP_EbmkE-1">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-3" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="VUCCtn55bJqLvP_EbmkE-2" target="VUCCtn55bJqLvP_EbmkE-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="284" y="296" as="sourcePoint" />
             <mxPoint x="144" y="242" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Object&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Object&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="683" y="27" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputMap&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputMap&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="489" y="266" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-6" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="VUCCtn55bJqLvP_EbmkE-5" target="VUCCtn55bJqLvP_EbmkE-4">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-6" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="VUCCtn55bJqLvP_EbmkE-5" target="VUCCtn55bJqLvP_EbmkE-4" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="67" y="296" as="sourcePoint" />
             <mxPoint x="144" y="242" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventAction&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventAction&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="200" y="272" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-8" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="VUCCtn55bJqLvP_EbmkE-7" target="VUCCtn55bJqLvP_EbmkE-1">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-8" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="VUCCtn55bJqLvP_EbmkE-7" target="VUCCtn55bJqLvP_EbmkE-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="67" y="296" as="sourcePoint" />
             <mxPoint x="144" y="242" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-9" value="" style="endArrow=none;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.024;exitY=0.411;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.98;entryY=0.361;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="VUCCtn55bJqLvP_EbmkE-5" target="VUCCtn55bJqLvP_EbmkE-7">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-9" value="" style="endArrow=none;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.024;exitY=0.411;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.98;entryY=0.361;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="VUCCtn55bJqLvP_EbmkE-5" target="VUCCtn55bJqLvP_EbmkE-7" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="377" y="326" as="sourcePoint" />
             <mxPoint x="144" y="242" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-10" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="VUCCtn55bJqLvP_EbmkE-5" target="VUCCtn55bJqLvP_EbmkE-5">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-10" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="VUCCtn55bJqLvP_EbmkE-5" target="VUCCtn55bJqLvP_EbmkE-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Input&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Input&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="731" y="266" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="VUCCtn55bJqLvP_EbmkE-12" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="VUCCtn55bJqLvP_EbmkE-11" target="VUCCtn55bJqLvP_EbmkE-4">
+        <mxCell id="VUCCtn55bJqLvP_EbmkE-12" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="VUCCtn55bJqLvP_EbmkE-11" target="VUCCtn55bJqLvP_EbmkE-4" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="657" y="331" as="sourcePoint" />
             <mxPoint x="651" y="229" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="r1gxcfyMvFvyWNf6ELBa-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Node&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
-          <mxGeometry x="952" y="259" width="190" height="140" as="geometry" />
+        <mxCell id="r1gxcfyMvFvyWNf6ELBa-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Node&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="957" y="269" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="r1gxcfyMvFvyWNf6ELBa-2" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="r1gxcfyMvFvyWNf6ELBa-1" target="VUCCtn55bJqLvP_EbmkE-4">
+        <mxCell id="r1gxcfyMvFvyWNf6ELBa-2" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="r1gxcfyMvFvyWNf6ELBa-1" target="VUCCtn55bJqLvP_EbmkE-4" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="920" y="326" as="sourcePoint" />
             <mxPoint x="651" y="229" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="912" y="215" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-1" value="&amp;nbsp;Viewport-based 的事件抽象类&lt;br style=&quot;font-size: 10px;&quot;&gt;" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-1" value="&amp;nbsp;Viewport-based 的事件抽象类&lt;br style=&quot;font-size: 10px;&quot;&gt;" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
           <mxGeometry x="-108" y="245" width="174" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventWithModifiers&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventWithModifiers&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="32" y="525" width="190" height="128" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventMouse&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ position&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventMouse&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ position&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="53" y="703" width="190" height="128" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventMouseButton&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventMouseButton&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="-55" y="884" width="190" height="128" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-6" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSsMfzcf4yZhpjlyUpgp-3" target="VUCCtn55bJqLvP_EbmkE-2">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-6" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="cSsMfzcf4yZhpjlyUpgp-3" target="VUCCtn55bJqLvP_EbmkE-2" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="140" y="331" as="sourcePoint" />
             <mxPoint x="58" y="461" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-7" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.537;exitY=0.008;exitDx=0;exitDy=0;fontFamily=Lucida Console;exitPerimeter=0;" edge="1" parent="1" source="cSsMfzcf4yZhpjlyUpgp-4" target="cSsMfzcf4yZhpjlyUpgp-3">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-7" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.537;exitY=0.008;exitDx=0;exitDy=0;fontFamily=Lucida Console;exitPerimeter=0;" parent="1" source="cSsMfzcf4yZhpjlyUpgp-4" target="cSsMfzcf4yZhpjlyUpgp-3" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="137" y="535" as="sourcePoint" />
             <mxPoint x="270" y="476" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-8" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.546;entryY=1.009;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cSsMfzcf4yZhpjlyUpgp-5" target="cSsMfzcf4yZhpjlyUpgp-4">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-8" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.546;entryY=1.009;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cSsMfzcf4yZhpjlyUpgp-5" target="cSsMfzcf4yZhpjlyUpgp-4" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="87" y="718" as="sourcePoint" />
             <mxPoint x="124" y="832" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-9" value="所有输入事件的基类" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-9" value="所有输入事件的基类" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
           <mxGeometry x="66" y="59" width="108" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-10" value="添加了是否按下修饰符的功能，如ALT、SHIFT" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-10" value="添加了是否按下修饰符的功能，如ALT、SHIFT" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
           <mxGeometry x="21" y="499" width="226" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-11" value="添加了基础鼠标事件" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-11" value="添加了基础鼠标事件" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
           <mxGeometry x="158" y="684" width="108" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-12" value="代表按下、释放鼠标，是否双击等" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-12" value="代表按下、释放鼠标，是否双击等" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
           <mxGeometry x="-42" y="860" width="168" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventKey&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventKey&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="-201" y="716" width="190" height="128" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-14" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.587;exitY=0.008;exitDx=0;exitDy=0;fontFamily=Lucida Console;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSsMfzcf4yZhpjlyUpgp-13" target="cSsMfzcf4yZhpjlyUpgp-3">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-14" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.587;exitY=0.008;exitDx=0;exitDy=0;fontFamily=Lucida Console;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="cSsMfzcf4yZhpjlyUpgp-13" target="cSsMfzcf4yZhpjlyUpgp-3" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="141" y="718" as="sourcePoint" />
             <mxPoint x="139" y="663" as="targetPoint" />
@@ -344,47 +410,418 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-15" value="表示按下或释放了键盘上的键" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-15" value="表示按下或释放了键盘上的键" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
           <mxGeometry x="-195" y="688" width="148" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventMouseButton&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventMouseButton&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="158" y="884" width="190" height="128" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-17" value="表示鼠标或笔的移动" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-17" value="表示鼠标或笔的移动" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
           <mxGeometry x="191" y="860" width="108" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-18" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.544;entryY=0.987;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cSsMfzcf4yZhpjlyUpgp-16" target="cSsMfzcf4yZhpjlyUpgp-4">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-18" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.544;entryY=0.987;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cSsMfzcf4yZhpjlyUpgp-16" target="cSsMfzcf4yZhpjlyUpgp-4" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="50" y="894" as="sourcePoint" />
             <mxPoint x="126" y="834" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-19" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;nbsp;InputEventScreenTouch&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-19" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;nbsp;InputEventScreenTouch&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="-195" y="523" width="190" height="128" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-20" value="表示屏幕触摸事件" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-20" value="表示屏幕触摸事件" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
           <mxGeometry x="-159" y="490" width="98" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-21" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSsMfzcf4yZhpjlyUpgp-19" target="VUCCtn55bJqLvP_EbmkE-2">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-21" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="cSsMfzcf4yZhpjlyUpgp-19" target="VUCCtn55bJqLvP_EbmkE-2" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="137" y="535" as="sourcePoint" />
             <mxPoint x="140" y="471" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-26" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventScreenDrag¶&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-26" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InputEventScreenDrag¶&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="-425" y="525" width="190" height="128" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-27" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.431;exitY=0.013;exitDx=0;exitDy=0;fontFamily=Lucida Console;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cSsMfzcf4yZhpjlyUpgp-26" target="VUCCtn55bJqLvP_EbmkE-2">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-27" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.431;exitY=0.013;exitDx=0;exitDy=0;fontFamily=Lucida Console;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="cSsMfzcf4yZhpjlyUpgp-26" target="VUCCtn55bJqLvP_EbmkE-2" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-90" y="533" as="sourcePoint" />
             <mxPoint x="130" y="461" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-29" value="表示屏幕拖动事件" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-29" value="表示屏幕拖动事件" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
           <mxGeometry x="-398" y="490" width="98" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="cSsMfzcf4yZhpjlyUpgp-30" value="Inputap中自定义的事件类型" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" vertex="1" parent="1">
+        <mxCell id="cSsMfzcf4yZhpjlyUpgp-30" value="Inputap中自定义的事件类型" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontFamily=Lucida Console;html=1;" parent="1" vertex="1">
           <mxGeometry x="252" y="240" width="150" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="GwA5ZUtBFT7raji1Kg7D" name="灯光">
+    <mxGraphModel dx="1221" dy="775" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="u1xIffr_fOwtR0mJF5rR-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Node&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="606" y="35" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="hbdkKqDA3u9VcJpjphlH-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;CanvasItem&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="606" y="239" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5MPa0a-U2f-4z1deOMYY-1" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="hbdkKqDA3u9VcJpjphlH-1" target="u1xIffr_fOwtR0mJF5rR-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1052" y="269" as="sourcePoint" />
+            <mxPoint x="778" y="167" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MPa0a-U2f-4z1deOMYY-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;Light2D&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="491" y="469" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5MPa0a-U2f-4z1deOMYY-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;DirectionalLight2D&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="341" y="674" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5MPa0a-U2f-4z1deOMYY-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;nbsp;PointLight2D&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="606" y="679" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5MPa0a-U2f-4z1deOMYY-8" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MPa0a-U2f-4z1deOMYY-3" target="hbdkKqDA3u9VcJpjphlH-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="711" y="249" as="sourcePoint" />
+            <mxPoint x="711" y="185" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MPa0a-U2f-4z1deOMYY-9" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5MPa0a-U2f-4z1deOMYY-6" target="5MPa0a-U2f-4z1deOMYY-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="581" y="446" as="sourcePoint" />
+            <mxPoint x="586" y="421" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MPa0a-U2f-4z1deOMYY-10" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;" edge="1" parent="1" source="5MPa0a-U2f-4z1deOMYY-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="446" y="684" as="sourcePoint" />
+            <mxPoint x="584" y="606" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5MPa0a-U2f-4z1deOMYY-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;i&gt;LightOccluder2D&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="755" y="472" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5MPa0a-U2f-4z1deOMYY-12" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="5MPa0a-U2f-4z1deOMYY-11" target="hbdkKqDA3u9VcJpjphlH-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="727" y="443" as="sourcePoint" />
+            <mxPoint x="711" y="389" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="1B2LWlVmNO2_dyj2hBmy" name="音频">
+    <mxGraphModel dx="2220" dy="1809" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lKZ-idz3ipZRAbB0oMz_-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;nbsp;Resource&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="606" y="35" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="lKZ-idz3ipZRAbB0oMz_-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AudioStream&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="602" y="242" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-1" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;" parent="1" source="lKZ-idz3ipZRAbB0oMz_-2" target="lKZ-idz3ipZRAbB0oMz_-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="701" y="239" as="sourcePoint" />
+            <mxPoint x="701" y="175" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-4" value="音频流的基类" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Lucida Console;" parent="KZkV3Ej1pPVx30-0jSkI-1" vertex="1" connectable="0">
+          <mxGeometry x="-0.4526" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AudioStreamMP3&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="559" y="829.3299999999999" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-3" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="KZkV3Ej1pPVx30-0jSkI-2" target="lKZ-idz3ipZRAbB0oMz_-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="707" y="252" as="sourcePoint" />
+            <mxPoint x="709" y="185" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-5" value="支持MP3类型" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="KZkV3Ej1pPVx30-0jSkI-3" vertex="1" connectable="0">
+          <mxGeometry x="-0.3517" y="-4" relative="1" as="geometry">
+            <mxPoint x="-34" y="122" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AudioStreamOggVorbis&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="316" y="826.21" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-8" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="KZkV3Ej1pPVx30-0jSkI-7" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="716" y="545" as="sourcePoint" />
+            <mxPoint x="698" y="379" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-9" value="支持ogg类型" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="KZkV3Ej1pPVx30-0jSkI-8" vertex="1" connectable="0">
+          <mxGeometry x="-0.3517" y="-4" relative="1" as="geometry">
+            <mxPoint x="-74" y="105" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AudioStreamWAV&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="102" y="829.3299999999999" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-12" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="KZkV3Ej1pPVx30-0jSkI-10" target="lKZ-idz3ipZRAbB0oMz_-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="726" y="555" as="sourcePoint" />
+            <mxPoint x="708" y="389" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-13" value="支持mav类型" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="KZkV3Ej1pPVx30-0jSkI-12" vertex="1" connectable="0">
+          <mxGeometry x="-0.3517" y="-4" relative="1" as="geometry">
+            <mxPoint x="-112" y="100" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-14" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="KZkV3Ej1pPVx30-0jSkI-7" target="KZkV3Ej1pPVx30-0jSkI-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-15" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AudioStreamRandomizer&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="815" y="832.21" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-16" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="KZkV3Ej1pPVx30-0jSkI-15" target="lKZ-idz3ipZRAbB0oMz_-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="945" y="564" as="sourcePoint" />
+            <mxPoint x="707" y="392" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-17" value="随机播放音频" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="KZkV3Ej1pPVx30-0jSkI-16" vertex="1" connectable="0">
+          <mxGeometry x="-0.3517" y="-4" relative="1" as="geometry">
+            <mxPoint x="70" y="127" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-19" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AudioStreamPolyphonic&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="1110" y="832.21" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-20" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="KZkV3Ej1pPVx30-0jSkI-19" target="lKZ-idz3ipZRAbB0oMz_-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1201" y="567" as="sourcePoint" />
+            <mxPoint x="707" y="392" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-21" value="支持多音频流单播放器" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="KZkV3Ej1pPVx30-0jSkI-20" vertex="1" connectable="0">
+          <mxGeometry x="-0.3517" y="-4" relative="1" as="geometry">
+            <mxPoint x="200" y="116" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-22" value="&lt;p style=&quot;text-align: center; margin: 4px 0px 0px;&quot;&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;AudioStreamPlayer&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="871" y="244" width="197" height="141" as="geometry" />
+        </mxCell>
+        <mxCell id="KZkV3Ej1pPVx30-0jSkI-23" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Node&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="1154.5" y="-383" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2cVMqIJyhfh5UKzuCr0C-1" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="KZkV3Ej1pPVx30-0jSkI-22" target="KZkV3Ej1pPVx30-0jSkI-23" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="987" y="249" as="sourcePoint" />
+            <mxPoint x="566.5" y="226" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2cVMqIJyhfh5UKzuCr0C-2" value="&lt;p style=&quot;text-align: center; margin: 4px 0px 0px;&quot;&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;AudioStreamPlayer2D&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="1134.5" y="249" width="197" height="141" as="geometry" />
+        </mxCell>
+        <mxCell id="VcrP6V7xkdCQ-s68w4uN-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;CanvasItem&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="1251.5" y="-107" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="VcrP6V7xkdCQ-s68w4uN-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Node2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="1251.5" y="56" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="VcrP6V7xkdCQ-s68w4uN-3" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Lucida Console;" parent="1" source="VcrP6V7xkdCQ-s68w4uN-2" target="VcrP6V7xkdCQ-s68w4uN-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="730.5" y="464" as="sourcePoint" />
+            <mxPoint x="551.5" y="367" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VcrP6V7xkdCQ-s68w4uN-4" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Lucida Console;" parent="1" source="VcrP6V7xkdCQ-s68w4uN-1" target="KZkV3Ej1pPVx30-0jSkI-23" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1528.5" y="105" as="sourcePoint" />
+            <mxPoint x="1102.5" y="112" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VcrP6V7xkdCQ-s68w4uN-5" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Lucida Console;" parent="1" source="2cVMqIJyhfh5UKzuCr0C-2" target="VcrP6V7xkdCQ-s68w4uN-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1381.5" y="249" as="sourcePoint" />
+            <mxPoint x="1389.5" y="169" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VcrP6V7xkdCQ-s68w4uN-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Node3D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="1741.5" y="-113" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="VcrP6V7xkdCQ-s68w4uN-12" value="&lt;p style=&quot;text-align: center; margin: 4px 0px 0px;&quot;&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;AudioStreamPlayer3D&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="1747.5" y="249" width="197" height="141" as="geometry" />
+        </mxCell>
+        <mxCell id="VcrP6V7xkdCQ-s68w4uN-14" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Lucida Console;" parent="1" source="VcrP6V7xkdCQ-s68w4uN-12" target="VcrP6V7xkdCQ-s68w4uN-11" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1353.5" y="266" as="sourcePoint" />
+            <mxPoint x="1356.5" y="206" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VcrP6V7xkdCQ-s68w4uN-15" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="VcrP6V7xkdCQ-s68w4uN-11" target="KZkV3Ej1pPVx30-0jSkI-23" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1632.5" y="270" as="sourcePoint" />
+            <mxPoint x="1264.5" y="-192" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VcrP6V7xkdCQ-s68w4uN-16" value="&lt;p style=&quot;text-align: center; margin: 4px 0px 0px;&quot;&gt;&lt;b&gt;AudioListener2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="1367.5" y="249" width="197" height="141" as="geometry" />
+        </mxCell>
+        <mxCell id="VcrP6V7xkdCQ-s68w4uN-17" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="VcrP6V7xkdCQ-s68w4uN-16" target="VcrP6V7xkdCQ-s68w4uN-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1243.5" y="259" as="sourcePoint" />
+            <mxPoint x="1343.5" y="193" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="-DC8JPI2mZ4t-TeMKfru" name="UI">
+    <mxGraphModel dx="1221" dy="1175" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TdY9tebJTEiILdjD1zNs-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;CanvasItem&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="46" y="-8" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="TdY9tebJTEiILdjD1zNs-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Control&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="12" y="194" width="190" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="bx6INFA2VeLmAafidxzZ" name="贝塞尔曲线">
+    <mxGraphModel dx="1362" dy="1061" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="S6iAHtbhkuEuNYi_X7Ou-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;nbsp;Resource&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="406" y="-5" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="n9FN57HCxWCI2ltllLaf-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Curve2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="411" y="210" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="aypHNU0RSqq-W133jpAS-1" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="n9FN57HCxWCI2ltllLaf-1" target="S6iAHtbhkuEuNYi_X7Ou-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="850" y="472" as="sourcePoint" />
+            <mxPoint x="701" y="379" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aypHNU0RSqq-W133jpAS-5" value="&lt;span style=&quot;font-family: &amp;quot;Lucida Console&amp;quot;; font-size: 11px;&quot;&gt;2D空间的贝塞尔曲线&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="aypHNU0RSqq-W133jpAS-1">
+          <mxGeometry x="0.0084" y="1" relative="1" as="geometry">
+            <mxPoint x="10" y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aypHNU0RSqq-W133jpAS-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Path2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="80" y="210" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="FHgWYJcX2yqDqXEVQHUy-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Node2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="72" y="-5" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="FHgWYJcX2yqDqXEVQHUy-5" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="aypHNU0RSqq-W133jpAS-2" target="FHgWYJcX2yqDqXEVQHUy-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="551" y="217" as="sourcePoint" />
+            <mxPoint x="395" y="137" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FHgWYJcX2yqDqXEVQHUy-6" value="&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;定义贝塞尔路径&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="FHgWYJcX2yqDqXEVQHUy-5">
+          <mxGeometry x="0.0084" y="1" relative="1" as="geometry">
+            <mxPoint x="-22" y="27" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FHgWYJcX2yqDqXEVQHUy-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="aypHNU0RSqq-W133jpAS-2" target="aypHNU0RSqq-W133jpAS-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FHgWYJcX2yqDqXEVQHUy-8" value="" style="endArrow=none;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="n9FN57HCxWCI2ltllLaf-1" target="aypHNU0RSqq-W133jpAS-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="551" y="217" as="sourcePoint" />
+            <mxPoint x="395" y="137" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FHgWYJcX2yqDqXEVQHUy-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PathFollow2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ _input(): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-159" y="206" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="FHgWYJcX2yqDqXEVQHUy-11" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="FHgWYJcX2yqDqXEVQHUy-10" target="FHgWYJcX2yqDqXEVQHUy-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="183" y="220" as="sourcePoint" />
+            <mxPoint x="180" y="145" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FHgWYJcX2yqDqXEVQHUy-12" value="&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;沿着Path2D移动、Path2D采样器&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="FHgWYJcX2yqDqXEVQHUy-11">
+          <mxGeometry x="0.0084" y="1" relative="1" as="geometry">
+            <mxPoint x="-107" y="24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="blaJxjD6pXJHwaBWRbpB" name="其他">
+    <mxGraphModel dx="1098" dy="443" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PcIgAMXgA_KLlc-zf9Dv-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Node2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="-146" y="273" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="reXU6pVwfXYdqpPh2YMG-1" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="reXU6pVwfXYdqpPh2YMG-3" target="PcIgAMXgA_KLlc-zf9Dv-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-64" y="206" as="sourcePoint" />
+            <mxPoint x="167" y="135" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="reXU6pVwfXYdqpPh2YMG-2" value="&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;2D矩形区域，&lt;br&gt;用于检测其是否在屏幕上可见&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="reXU6pVwfXYdqpPh2YMG-1" vertex="1" connectable="0">
+          <mxGeometry x="0.0084" y="1" relative="1" as="geometry">
+            <mxPoint x="-52" y="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="reXU6pVwfXYdqpPh2YMG-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;VisibleOnScreenNotifier2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="-286" y="499" width="225" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="reXU6pVwfXYdqpPh2YMG-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;VisibleOnScreenEnabler2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
+          <mxGeometry x="-292" y="706" width="225" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="reXU6pVwfXYdqpPh2YMG-5" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="reXU6pVwfXYdqpPh2YMG-4" target="reXU6pVwfXYdqpPh2YMG-3" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-163" y="509" as="sourcePoint" />
+            <mxPoint x="-96" y="423" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="reXU6pVwfXYdqpPh2YMG-6" value="&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;2D矩形区域，&lt;br&gt;当屏幕可见时，启动目标节点&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="reXU6pVwfXYdqpPh2YMG-5" vertex="1" connectable="0">
+          <mxGeometry x="0.0084" y="1" relative="1" as="geometry">
+            <mxPoint x="8" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_kjkQI7_ZngiVisKYH1n-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Marker2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="-3" y="489" width="225" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="_kjkQI7_ZngiVisKYH1n-2" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.485;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_kjkQI7_ZngiVisKYH1n-1" target="PcIgAMXgA_KLlc-zf9Dv-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-163" y="509" as="sourcePoint" />
+            <mxPoint x="-53" y="415" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_kjkQI7_ZngiVisKYH1n-3" value="&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;2d位置标记，可以用作出生点&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="_kjkQI7_ZngiVisKYH1n-2">
+          <mxGeometry x="0.0084" y="1" relative="1" as="geometry">
+            <mxPoint x="94" y="29" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

@@ -9,7 +9,7 @@
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -47,9 +47,10 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="Animation_fsssu"]
 resource_name = "down"
 length = 0.4
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -87,9 +88,10 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="Animation_35snc"]
 resource_name = "down"
 length = 0.4
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -127,6 +129,7 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="Animation_3gqnw"]
 resource_name = "right"
 length = 0.4
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -153,7 +156,7 @@ tracks/1/keys = {
 }
 tracks/2/type = "value"
 tracks/2/imported = false
-tracks/2/enabled = false
+tracks/2/enabled = true
 tracks/2/path = NodePath(".:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
@@ -167,9 +170,10 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="Animation_kyvfg"]
 resource_name = "up"
 length = 0.4
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -241,15 +245,12 @@ script = ExtResource("1_rev85")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(127, 67)
-scale = Vector2(3, 3)
 texture = ExtResource("1_opqnk")
 hframes = 4
 region_enabled = true
 region_rect = Rect2(536, 0, 72, 29)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(127, 67)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("CapsuleShape2D_sp6sn")

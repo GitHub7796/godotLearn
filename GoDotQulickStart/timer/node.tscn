@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://d2ihhovorxdge"]
+
+[node name="Node" type="Node"]
+
+[node name="Timer" type="Timer" parent="."]
