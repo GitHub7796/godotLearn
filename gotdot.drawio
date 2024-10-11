@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8" pages="8">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17" pages="8">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="core">
     <mxGraphModel dx="2411" dy="1782" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -179,7 +179,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NxPvgAtF0f-lNKIYNhJ0" name="动画">
-    <mxGraphModel dx="1436" dy="512" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="315" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -270,16 +270,16 @@
             <mxPoint x="348" y="938" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="gIAxzh-qxtlDPX4UCAnd-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;SpriteFrames&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="gIAxzh-qxtlDPX4UCAnd-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;SpriteFrames&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="907" y="785" width="190" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="gIAxzh-qxtlDPX4UCAnd-2" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gIAxzh-qxtlDPX4UCAnd-1" target="qIpkqz7bRkPuC4JM58-H-2">
+        <mxCell id="gIAxzh-qxtlDPX4UCAnd-2" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="gIAxzh-qxtlDPX4UCAnd-1" target="qIpkqz7bRkPuC4JM58-H-2" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1236" y="776" as="sourcePoint" />
             <mxPoint x="1109" y="644" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="gIAxzh-qxtlDPX4UCAnd-3" value="" style="endArrow=none;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wcD15CMurTgvJAa5PcHh-4" target="gIAxzh-qxtlDPX4UCAnd-1">
+        <mxCell id="gIAxzh-qxtlDPX4UCAnd-3" value="" style="endArrow=none;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Lucida Console;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wcD15CMurTgvJAa5PcHh-4" target="gIAxzh-qxtlDPX4UCAnd-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1010" y="779" as="sourcePoint" />
             <mxPoint x="1109" y="644" as="targetPoint" />
@@ -771,12 +771,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="blaJxjD6pXJHwaBWRbpB" name="其他">
-    <mxGraphModel dx="1098" dy="443" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1195" dy="596" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="PcIgAMXgA_KLlc-zf9Dv-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Node2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
-          <mxGeometry x="-146" y="273" width="190" height="140" as="geometry" />
+          <mxGeometry x="29" y="214" width="190" height="140" as="geometry" />
         </mxCell>
         <mxCell id="reXU6pVwfXYdqpPh2YMG-1" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="reXU6pVwfXYdqpPh2YMG-3" target="PcIgAMXgA_KLlc-zf9Dv-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -787,7 +787,7 @@
         </mxCell>
         <mxCell id="reXU6pVwfXYdqpPh2YMG-2" value="&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;2D矩形区域，&lt;br&gt;用于检测其是否在屏幕上可见&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="reXU6pVwfXYdqpPh2YMG-1" vertex="1" connectable="0">
           <mxGeometry x="0.0084" y="1" relative="1" as="geometry">
-            <mxPoint x="-52" y="25" as="offset" />
+            <mxPoint x="-166" y="44" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="reXU6pVwfXYdqpPh2YMG-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;VisibleOnScreenNotifier2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
@@ -808,19 +808,29 @@
             <mxPoint x="8" y="8" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_kjkQI7_ZngiVisKYH1n-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Marker2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+        <mxCell id="_kjkQI7_ZngiVisKYH1n-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Marker2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" parent="1" vertex="1">
           <mxGeometry x="-3" y="489" width="225" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="_kjkQI7_ZngiVisKYH1n-2" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.485;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_kjkQI7_ZngiVisKYH1n-1" target="PcIgAMXgA_KLlc-zf9Dv-1">
+        <mxCell id="_kjkQI7_ZngiVisKYH1n-2" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.485;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="_kjkQI7_ZngiVisKYH1n-1" target="PcIgAMXgA_KLlc-zf9Dv-1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-163" y="509" as="sourcePoint" />
             <mxPoint x="-53" y="415" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_kjkQI7_ZngiVisKYH1n-3" value="&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;2d位置标记，可以用作出生点&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="_kjkQI7_ZngiVisKYH1n-2">
+        <mxCell id="_kjkQI7_ZngiVisKYH1n-3" value="&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;2d位置标记，可以用作出生点&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="_kjkQI7_ZngiVisKYH1n-2" vertex="1" connectable="0">
           <mxGeometry x="0.0084" y="1" relative="1" as="geometry">
-            <mxPoint x="94" y="29" as="offset" />
+            <mxPoint x="-41" y="54" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MiIcg4kyqUOnqCCatK3Z-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Camera2D&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Lucida Console;" vertex="1" parent="1">
+          <mxGeometry x="258" y="489" width="225" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="MiIcg4kyqUOnqCCatK3Z-2" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;fontFamily=Lucida Console;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="MiIcg4kyqUOnqCCatK3Z-1" target="PcIgAMXgA_KLlc-zf9Dv-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="120" y="499" as="sourcePoint" />
+            <mxPoint x="-44" y="421" as="targetPoint" />
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
       </root>

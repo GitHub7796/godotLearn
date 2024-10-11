@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://doqre28ck6eh2"]
+
+[ext_resource type="Script" path="res://camera/02/node_2d.gd" id="1_0lnlr"]
+[ext_resource type="Texture2D" uid="uid://bdpcsbmm63b" path="res://icon.svg" id="1_mf7l3"]
+[ext_resource type="Script" path="res://camera/03/icon.gd" id="3_v8ib3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_175vx"]
+size = Vector2(9, 209)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k6k44"]
+size = Vector2(22, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2s2c0"]
+size = Vector2(129.121, 135.133)
+
+[node name="Node2d" type="Node2D"]
+script = ExtResource("1_0lnlr")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(44, 125)
+shape = SubResource("RectangleShape2D_175vx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(421, 123)
+shape = SubResource("RectangleShape2D_175vx")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(136, 218)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_175vx")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(316, 219)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_175vx")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(241.5, 203)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_k6k44")
+
+[node name="Icon" type="CharacterBody2D" parent="."]
+position = Vector2(116, 148)
+scale = Vector2(0.257813, 0.234375)
+script = ExtResource("3_v8ib3")
+
+[node name="Camera2D" type="Camera2D" parent="Icon"]
+position = Vector2(65.9394, -98.1333)
+zoom = Vector2(4.415, 4.415)
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_top_margin = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Icon"]
+position = Vector2(54.303, -85.3333)
+texture = ExtResource("1_mf7l3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Icon"]
+position = Vector2(55.6818, -84.6333)
+shape = SubResource("RectangleShape2D_2s2c0")
