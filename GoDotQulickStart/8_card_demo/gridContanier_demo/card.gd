@@ -13,8 +13,17 @@ var stiffness = 500
 func _process(delta: float) -> void:
 	match cardCurrentState:
 		cardState.dragging:
+			print("get_local_mouse_position()")
+			print(get_local_mouse_position())
 			var target_position= get_local_mouse_position()-size/2
+			print("size")
+			print(size)
+			print(size/2)
+			print("target_position")
+			print(target_position)
 			global_position=global_position.lerp(target_position,0.4)
+			print("global_position")
+			print(global_position)
 		cardState.follwing:
 			var target_position=follow_target.global_position
 			var displacement = target_position-global_position

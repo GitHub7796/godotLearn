@@ -1,7 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://pkrxp7d66g64"]
-
-[sub_resource type="Resource" id="Resource_qrngg"]
-metadata/__load_path__ = "res://6_signal_custom/node_2d.gd"
+[gd_scene format=3 uid="uid://pkrxp7d66g64"]
 
 [node name="Node2D" type="Node2D"]
-script = SubResource("Resource_qrngg")
