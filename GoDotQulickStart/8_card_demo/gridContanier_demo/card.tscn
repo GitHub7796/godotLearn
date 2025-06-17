@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://j6aqxnm587t5"]
+
+[ext_resource type="Texture2D" uid="uid://bdpcsbmm63b" path="res://icon.svg" id="1_e7hn7"]
+[ext_resource type="Script" uid="uid://bjc1ltib2uwb7" path="res://8_card_demo/gridContanier_demo/card.gd" id="1_yowiw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_e7hn7"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="Card" type="Control" node_paths=PackedStringArray("follow_target")]
+layout_mode = 3
+anchor_right = 0.173611
+anchor_bottom = 0.462963
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yowiw")
+follow_target = NodePath(".")
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21
+anchor_top = 0.276667
+anchor_right = 1.965
+anchor_bottom = 1.49
+offset_right = 128.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("1_e7hn7")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 218.0
+offset_right = 130.0
+offset_bottom = 241.0
+text = "卡牌之力"
+label_settings = SubResource("LabelSettings_e7hn7")
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

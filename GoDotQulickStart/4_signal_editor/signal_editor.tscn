@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b3lm3pupbpjcp"]
 
 [ext_resource type="Texture2D" uid="uid://bdpcsbmm63b" path="res://icon.svg" id="1_761bw"]
-[ext_resource type="Script" path="res://4_signal_editor/signal_editor.gd" id="2_enixb"]
+[ext_resource type="Script" uid="uid://kddv4ukbu7vn" path="res://4_signal_editor/signal_editor.gd" id="2_enixb"]
 
 [node name="Sprite2D" type="Sprite2D"]
 position = Vector2(516, 303)

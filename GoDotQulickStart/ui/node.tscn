@@ -20,7 +20,7 @@ offset_top = 181.0
 offset_right = -27.646
 offset_bottom = 133.499
 scale = Vector2(7.15361, -20.5753)
-color = Color(0.253238, 0.253238, 0.253238, 1)
+color = Color(0.406928, 0.155898, 0.225408, 1)
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
@@ -90,6 +90,7 @@ offset_bottom = 41.0
 text = "menuButton"
 item_count = 2
 popup/item_0/text = "menu1"
+popup/item_0/id = 0
 popup/item_1/text = "menu2"
 popup/item_1/id = 1
 
@@ -101,6 +102,7 @@ offset_right = 783.0
 offset_bottom = 45.0
 item_count = 2
 popup/item_0/text = "option1"
+popup/item_0/id = 0
 popup/item_1/text = "option2"
 popup/item_1/id = 1
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d2gun7xoh5fsb"]
 
-[ext_resource type="Script" path="res://canvasItem_learn/1_demo/node_2d.gd" id="1_ugix6"]
+[ext_resource type="Script" uid="uid://6wbxhkub3rc5" path="res://canvasItem_learn/1_demo/node_2d.gd" id="1_ugix6"]
 
 [node name="Node" type="Node"]
 

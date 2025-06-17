@@ -72,8 +72,8 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_t6633"]
 _data = {
-"RESET": SubResource("Animation_yfyas"),
-"移动": SubResource("Animation_dp2n0")
+&"RESET": SubResource("Animation_yfyas"),
+&"移动": SubResource("Animation_dp2n0")
 }
 
 [node name="Node2d" type="Node2D"]

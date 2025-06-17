@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b3lm3pupbpjcp"]
 
 [ext_resource type="Texture2D" uid="uid://bdpcsbmm63b" path="res://icon.svg" id="1_761bw"]
-[ext_resource type="Script" path="res://2_turning_around/turning_around.gd" id="2_yg0s2"]
+[ext_resource type="Script" uid="uid://bobnp2gbstujp" path="res://2_turning_around/turning_around.gd" id="2_yg0s2"]
 
 [node name="Sprite2D" type="Sprite2D"]
 position = Vector2(107, 107)

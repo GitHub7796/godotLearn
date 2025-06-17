@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgtpxx6h8r852"]
+
+[ext_resource type="PackedScene" uid="uid://j6aqxnm587t5" path="res://8_card_demo/gridContanier_demo/card.tscn" id="1_qjgcf"]
+
+[node name="Demo1" type="Node2D"]
+
+[node name="Card" parent="." node_paths=PackedStringArray("follow_target") instance=ExtResource("1_qjgcf")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+follow_target = NodePath("..")

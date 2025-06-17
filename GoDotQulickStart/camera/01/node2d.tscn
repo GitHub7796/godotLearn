@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://doqre28ck6eh2"]
 
 [ext_resource type="Texture2D" uid="uid://bdpcsbmm63b" path="res://icon.svg" id="1_mf7l3"]
-[ext_resource type="Script" path="res://camera/01/icon.gd" id="2_rsq4b"]
+[ext_resource type="Script" uid="uid://dpbnq01qm7d1k" path="res://camera/01/icon.gd" id="2_rsq4b"]
 
 [node name="Node2d" type="Node2D"]
 

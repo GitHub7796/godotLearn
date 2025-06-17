@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://r0bkajd3dtgd"]
 
 [ext_resource type="Texture2D" uid="uid://2wx0ed1v8cgd" path="res://animation_learn/art/sritesheet running.png" id="1_opqnk"]
-[ext_resource type="Script" path="res://animation_learn/animation_tree/node_2d.gd" id="1_rev85"]
+[ext_resource type="Script" uid="uid://co3lmea3slqpj" path="res://animation_learn/animation_tree/node_2d.gd" id="1_rev85"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sp6sn"]
 
@@ -206,11 +206,11 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ro2lr"]
 _data = {
-"RESET": SubResource("Animation_vudmm"),
-"down": SubResource("Animation_fsssu"),
-"left": SubResource("Animation_35snc"),
-"right": SubResource("Animation_3gqnw"),
-"up": SubResource("Animation_kyvfg")
+&"RESET": SubResource("Animation_vudmm"),
+&"down": SubResource("Animation_fsssu"),
+&"left": SubResource("Animation_35snc"),
+&"right": SubResource("Animation_3gqnw"),
+&"up": SubResource("Animation_kyvfg")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_64hcw"]

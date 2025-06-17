@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://pkrxp7d66g64"]
 
-[ext_resource type="PackedScene" path="res://5_signal_code/signal_code.tscn" id="1_ujrul"]
-[ext_resource type="Script" path="res://5_signal_code/signal_code.gd" id="2_ve54y"]
+[ext_resource type="PackedScene" uid="uid://b3lm3pupbpjcp" path="res://5_signal_code/signal_code.tscn" id="1_ujrul"]
+[ext_resource type="Script" uid="uid://dypn8pcub4ny7" path="res://5_signal_code/signal_code.gd" id="2_ve54y"]
 
 [node name="Node2D" type="Node2D"]
 

@@ -49,14 +49,14 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kedgr"]
 _data = {
-"idle": SubResource("Animation_cxvva")
+&"idle": SubResource("Animation_cxvva")
 }
 
 [sub_resource type="Animation" id="Animation_sr8m5"]
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jnlta"]
 _data = {
-"idle": SubResource("Animation_sr8m5")
+&"idle": SubResource("Animation_sr8m5")
 }
 
 [node name="CharacterBody2d" type="CharacterBody2D"]

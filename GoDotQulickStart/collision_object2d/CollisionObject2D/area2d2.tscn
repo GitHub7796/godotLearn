@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b6vbtiacap46e"]
 
-[ext_resource type="Script" path="res://collision_object2d/CollisionObject2D/area2d2.gd" id="1_yhno0"]
+[ext_resource type="Script" uid="uid://c6b2gy2er6bwu" path="res://collision_object2d/CollisionObject2D/area2d2.gd" id="1_yhno0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vu25s"]
 size = Vector2(176, 152)
