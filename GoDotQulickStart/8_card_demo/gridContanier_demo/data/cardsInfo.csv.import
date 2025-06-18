@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bm2l8p47uvql5"
+
+[deps]
+
+files=["res://8_card_demo/gridContanier_demo/data/cardsInfo.index.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.site.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.npc.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.food_HP.translation"]
+
+source_file="res://8_card_demo/gridContanier_demo/data/cardsInfo.csv"
+dest_files=["res://8_card_demo/gridContanier_demo/data/cardsInfo.index.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.base.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.site.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.npc.translation", "res://8_card_demo/gridContanier_demo/data/cardsInfo.food_HP.translation"]
+
+[params]
+
+compress=true
+delimiter=0

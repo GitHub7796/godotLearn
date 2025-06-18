@@ -1,29 +1,25 @@
 [gd_scene load_steps=4 format=3 uid="uid://j6aqxnm587t5"]
 
 [ext_resource type="Texture2D" uid="uid://bdpcsbmm63b" path="res://icon.svg" id="1_e7hn7"]
-[ext_resource type="Script" path="res://8_card_demo/gridContanier_demo/card.gd" id="1_yowiw"]
+[ext_resource type="Script" uid="uid://bjc1ltib2uwb7" path="res://8_card_demo/gridContanier_demo/card.gd" id="1_yowiw"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_e7hn7"]
 font_color = Color(0, 0, 0, 1)
 
-[node name="Card" type="Control" node_paths=PackedStringArray("follow_target")]
+[node name="Card" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 0.207465
+anchor_bottom = 0.566358
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yowiw")
-follow_target = NodePath(".")
 metadata/_edit_use_anchors_ = true
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 1
-anchor_left = -0.00173611
-anchor_top = -0.00771605
-anchor_right = 0.212674
-anchor_bottom = 0.503086
-offset_bottom = -3.05176e-05
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(121, 140)
