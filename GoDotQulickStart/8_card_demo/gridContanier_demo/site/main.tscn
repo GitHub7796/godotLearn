@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwf5g77qlsex6"]
+
+[ext_resource type="PackedScene" uid="uid://bnc5cvg785g14" path="res://8_card_demo/gridContanier_demo/desk/desk.tscn" id="1_3idpd"]
+[ext_resource type="Script" uid="uid://drshybxeyoh6w" path="res://8_card_demo/gridContanier_demo/site/main.gd" id="1_vwwh0"]
+
+[node name="Main" type="Control" node_paths=PackedStringArray("scene_1", "scene_2", "scene_3")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vwwh0")
+scene_1 = NodePath("deck")
+scene_2 = NodePath("deck2")
+scene_3 = NodePath("deck3")
+maxRandomItemNum = 4
+minRdndomItemNum = 1
+siteItems = {
+"Gold_ore": 100,
+"Ice": 100,
+"Silicon_ore": 100
+}
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="deck" parent="." instance=ExtResource("1_3idpd")]
+layout_mode = 1
+anchor_left = 0.123264
+anchor_top = 0.00154321
+anchor_right = 0.929688
+anchor_bottom = 0.327161
+grow_horizontal = 1
+
+[node name="deck2" parent="." instance=ExtResource("1_3idpd")]
+layout_mode = 1
+anchor_left = 0.124132
+anchor_top = 0.339506
+anchor_right = 0.930556
+anchor_bottom = 0.665124
+offset_bottom = 3.05176e-05
+grow_horizontal = 1
+
+[node name="deck3" parent="." instance=ExtResource("1_3idpd")]
+layout_mode = 1
+anchor_left = 0.122396
+anchor_top = 0.66821
+anchor_right = 0.92882
+anchor_bottom = 0.993827
+offset_top = 3.05176e-05
+offset_bottom = -6.10352e-05
+grow_horizontal = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 268.0
+offset_right = 122.0
+offset_bottom = 339.0
+text = "抽卡"
+
+[connection signal="button_down" from="Button" to="." method="get_some_card"]

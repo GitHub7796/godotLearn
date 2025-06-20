@@ -6,7 +6,6 @@ var infosDic :Dictionary
 
 func _init() -> void:
 	infosDic=read_csv_as_nested_dict(file_path)
-	print(infosDic)
 
 func read_csv_as_nested_dict(path:String) -> Dictionary:
 	var data = {}
@@ -24,8 +23,7 @@ func read_csv_as_nested_dict(path:String) -> Dictionary:
 			var key = values[0]
 			var row_dict = {}
 			for i in range(0,headers.size()):
-				row_dict[headers[i]]=values[i] 
+				row_dict[headers[i]]=values[i]
 			data[key]=row_dict
 	file.close()
 	return data
-			
