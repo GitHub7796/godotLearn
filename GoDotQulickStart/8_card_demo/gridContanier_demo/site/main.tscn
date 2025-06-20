@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwf5g77qlsex6"]
+[gd_scene load_steps=4 format=3 uid="uid://dwf5g77qlsex6"]
 
 [ext_resource type="PackedScene" uid="uid://bnc5cvg785g14" path="res://8_card_demo/gridContanier_demo/desk/desk.tscn" id="1_3idpd"]
 [ext_resource type="Script" uid="uid://drshybxeyoh6w" path="res://8_card_demo/gridContanier_demo/site/main.gd" id="1_vwwh0"]
+[ext_resource type="PackedScene" uid="uid://j6aqxnm587t5" path="res://8_card_demo/gridContanier_demo/card.tscn" id="3_mrbmy"]
 
 [node name="Main" type="Control" node_paths=PackedStringArray("scene_1", "scene_2", "scene_3")]
 layout_mode = 3
@@ -67,5 +68,10 @@ offset_top = 268.0
 offset_right = 122.0
 offset_bottom = 339.0
 text = "抽卡"
+
+[node name="Card" parent="." node_paths=PackedStringArray("follow_target") instance=ExtResource("3_mrbmy")]
+layout_mode = 1
+scale = Vector2(0.535, 0.535)
+follow_target = NodePath("../Control")
 
 [connection signal="button_down" from="Button" to="." method="get_some_card"]
