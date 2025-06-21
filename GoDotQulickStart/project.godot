@@ -24,6 +24,10 @@ CardInfos="*res://8_card_demo/gridContanier_demo/util/cardInfo.gd"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 
+[global_group]
+
+cardDropable=""
+
 [input]
 
 left={

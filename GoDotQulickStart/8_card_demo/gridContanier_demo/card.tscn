@@ -1,12 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://j6aqxnm587t5"]
+[gd_scene load_steps=8 format=3 uid="uid://j6aqxnm587t5"]
 
 [ext_resource type="Texture2D" uid="uid://bdpcsbmm63b" path="res://icon.svg" id="1_e7hn7"]
 [ext_resource type="Script" uid="uid://bjc1ltib2uwb7" path="res://8_card_demo/gridContanier_demo/card.gd" id="1_yowiw"]
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_yowiw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_djvd0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yowiw"]
+
+[sub_resource type="Theme" id="Theme_yowiw"]
+Button/styles/hover = SubResource("StyleBoxEmpty_djvd0")
+Button/styles/normal = SubResource("StyleBoxEmpty_yowiw")
+
 [sub_resource type="LabelSettings" id="LabelSettings_e7hn7"]
 font_color = Color(0, 0, 0, 1)
 
-[node name="Card" type="Control"]
+[node name="Card" type="Control" node_paths=PackedStringArray("pickButton")]
+material = SubResource("CanvasItemMaterial_yowiw")
 custom_minimum_size = Vector2(240, 340)
 layout_mode = 3
 anchor_right = 0.125
@@ -14,15 +25,20 @@ anchor_bottom = 0.314815
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yowiw")
+pickButton = NodePath("Control/Button")
 metadata/_edit_use_anchors_ = true
 
 [node name="Control" type="Control" parent="."]
 custom_minimum_size = Vector2(220, 317)
 layout_mode = 1
-anchor_left = 0.0416667
-anchor_top = 0.0338235
+anchor_left = 0.0416665
+anchor_top = 0.0338232
 anchor_right = 0.958333
 anchor_bottom = 0.966176
+offset_left = 4.57764e-05
+offset_top = 9.15527e-05
+offset_right = -4.57764e-05
+offset_bottom = -9.15527e-05
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(121, 140)
@@ -41,10 +57,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.1875
 anchor_top = 0.214706
-anchor_right = 0.76806
-anchor_bottom = 0.607982
-offset_right = 441.226
-offset_bottom = 423.428
+anchor_right = 0.808172
+anchor_bottom = 0.629669
+offset_right = 432.401
+offset_bottom = 416.553
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.24, 0.24)
@@ -58,14 +74,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_yowiw")
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.338776
 anchor_top = 0.723926
-anchor_right = 0.6
-anchor_bottom = 0.794479
+anchor_right = 0.629685
+anchor_bottom = 0.796481
+offset_right = -6.53072
+offset_bottom = -0.634689
 text = "卡牌之力"
 label_settings = SubResource("LabelSettings_e7hn7")
 horizontal_alignment = 1

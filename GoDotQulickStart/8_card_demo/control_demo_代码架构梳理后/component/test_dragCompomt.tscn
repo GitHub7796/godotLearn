@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4dc8euqt23wf"]
+
+[ext_resource type="PackedScene" uid="uid://by1ui61rpl6m0" path="res://8_card_demo/control_demo_代码架构梳理后/component/dragCompont.tscn" id="1_df2ii"]
+
+[node name="TestDragCompomt" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DragCompont" parent="." node_paths=PackedStringArray("follow_target", "card") instance=ExtResource("1_df2ii")]
+layout_mode = 1
+follow_target = NodePath("../Control")
+card = NodePath("Panel")
+
+[node name="Panel" type="Panel" parent="DragCompont"]
+visible = false
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

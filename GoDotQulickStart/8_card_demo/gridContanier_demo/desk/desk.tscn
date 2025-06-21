@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dvu7gjjk2sptn" path="res://8_card_demo/gridContanier_demo/desk/desk.gd" id="1_sxmyw"]
 
-[node name="deck" type="Panel"]
+[node name="deck" type="Panel" groups=["cardDropable"]]
 anchors_preset = -1
 anchor_right = 0.815104
 anchor_bottom = 0.333333
@@ -16,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="cardPoiDeck" type="HBoxContainer" parent="ScrollContainer"]
 layout_mode = 2
@@ -27,3 +28,4 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true

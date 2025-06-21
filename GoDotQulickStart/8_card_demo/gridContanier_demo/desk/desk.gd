@@ -19,7 +19,8 @@ func sort_nodes_by_position(children):
 func sort_by_position(a, b):
 	return a.get_position().x - b.get_position().x
 
-func add_card(cardToAdd)->void:
+func add_card(cardToAdd:card)->void:
+	print("1",cardToAdd.size)
 	var index = cardToAdd.z_index
 	var cardBackgraoud = preload("res://8_card_demo/gridContanier_demo/card_background.tscn").instantiate()
 	cardPoiDeck.add_child(cardBackgraoud)
@@ -33,8 +34,11 @@ func add_card(cardToAdd)->void:
 	if  cardToAdd.get_parent():
 		cardToAdd.get_parent().remove_child(cardToAdd)
 	print("cardDeck add before:",cardToAdd.global_position)
+	print("2",cardToAdd.size)
 	cardDeck.add_child(cardToAdd)
+	print("3",cardToAdd.size)
 	cardToAdd.global_position=Vector2(0,0)
+	print("4",cardToAdd.size)
 	print("cardDeck add after:",cardToAdd.global_position)
 #  why？
 	#var global_poi= cardToAdd.global_position
@@ -42,4 +46,9 @@ func add_card(cardToAdd)->void:
 	print("Card position after add_card: ", cardToAdd.global_position)
 	cardToAdd.follow_target=cardBackgraoud
 	cardToAdd.preDeck = self
+	print("5",cardToAdd.size)
+	cardToAdd.cardCurrentState=cardToAdd.cardState.follwing
+	cardToAdd.follow_target=cardBackgraoud
+	cardToAdd.preDeck = self
+	print("5",cardToAdd.size)
 	cardToAdd.cardCurrentState=cardToAdd.cardState.follwing

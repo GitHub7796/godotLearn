@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://kejg1yk6lt67"]
+
+[ext_resource type="Script" uid="uid://dpdpef1oycaa8" path="res://8_card_demo/gridContanier_demo/test/test_desk_andd_card.gd" id="1_xg3vq"]
+[ext_resource type="PackedScene" uid="uid://bnc5cvg785g14" path="res://8_card_demo/gridContanier_demo/desk/desk.tscn" id="2_ff6wl"]
+
+[node name="DeskAnddCard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xg3vq")
+
+[node name="deck" parent="." instance=ExtResource("2_ff6wl")]
+layout_mode = 1
+anchor_left = 0.172917
+anchor_top = 0.0740741
+anchor_right = 0.988021
+anchor_bottom = 0.407407
+
+[node name="q" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0197917
+anchor_top = 0.207407
+anchor_right = 0.1125
+anchor_bottom = 0.275926
+text = "点击"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_down" from="q" to="." method="_on_q_button_down"]

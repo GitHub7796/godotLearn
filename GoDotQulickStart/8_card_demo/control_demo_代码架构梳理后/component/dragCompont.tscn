@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://by1ui61rpl6m0"]
+
+[ext_resource type="Script" uid="uid://3lmcouwvnxpc" path="res://8_card_demo/control_demo_代码架构梳理后/component/drag_compont.gd" id="1_b6gv6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gvgkl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b6gv6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b6gv6"]
+bg_color = Color(0.988235, 0.988235, 0.980392, 0.815686)
+
+[sub_resource type="Theme" id="Theme_mr33e"]
+Button/styles/hover = SubResource("StyleBoxEmpty_gvgkl")
+Button/styles/normal = SubResource("StyleBoxEmpty_b6gv6")
+Button/styles/pressed = SubResource("StyleBoxFlat_b6gv6")
+
+[node name="DragCompont" type="Control"]
+custom_minimum_size = Vector2(240, 340)
+layout_mode = 3
+anchor_right = 0.125
+anchor_bottom = 0.314815
+offset_right = -240.0
+offset_bottom = -340.0
+script = ExtResource("1_b6gv6")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+z_index = 100
+custom_minimum_size = Vector2(240, 340)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_mr33e")
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
