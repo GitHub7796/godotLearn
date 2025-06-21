@@ -7,22 +7,26 @@
 font_color = Color(0, 0, 0, 1)
 
 [node name="Card" type="Control"]
+custom_minimum_size = Vector2(240, 340)
 layout_mode = 3
-anchor_right = 0.207465
-anchor_bottom = 0.566358
+anchor_right = 0.125
+anchor_bottom = 0.314815
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yowiw")
 metadata/_edit_use_anchors_ = true
 
 [node name="Control" type="Control" parent="."]
+custom_minimum_size = Vector2(220, 317)
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.0416667
+anchor_top = 0.0338235
+anchor_right = 0.958333
+anchor_bottom = 0.966176
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(121, 140)
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="Control"]
 layout_mode = 1
@@ -35,12 +39,12 @@ grow_vertical = 2
 [node name="TextureRect" type="TextureRect" parent="Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.208163
-anchor_top = 0.233129
-anchor_right = 0.754751
-anchor_bottom = 0.618562
-offset_right = 424.061
-offset_bottom = 397.895
+anchor_left = 0.1875
+anchor_top = 0.214706
+anchor_right = 0.76806
+anchor_bottom = 0.607982
+offset_right = 441.226
+offset_bottom = 423.428
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.24, 0.24)
@@ -64,6 +68,8 @@ anchor_right = 0.6
 anchor_bottom = 0.794479
 text = "卡牌之力"
 label_settings = SubResource("LabelSettings_e7hn7")
+horizontal_alignment = 1
+vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [connection signal="button_down" from="Control/Button" to="." method="_on_button_button_down"]

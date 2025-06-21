@@ -8,7 +8,8 @@ extends Control
 @export var minRdndomItemNum:int
 @export var siteItems:Dictionary
 
-func add_new_card(cardName,cardDeck,caller=scene_1)->Node:
+func add_new_card(cardName,cardDeck:desk,caller=scene_1)->Node:
+	print("caller positon:",caller.global_position)
 	var cardClass = CardInfos.infosDic[cardName]["base_cardClass"]
 	var cardToAdd:card
 	cardToAdd=preload("res://8_card_demo/gridContanier_demo/card.tscn").instantiate()
@@ -34,7 +35,7 @@ func get_some_card():
 			# 性能优化技巧：一次性创建并添加大量卡牌或许会给系统带来较大的性能压力
 			# 游戏里，若一次性添加所有选中的卡牌，玩家可能难以看清每张卡牌的添加过程。借助 0.1 秒的延迟，卡牌会逐个添加，能产生更流畅、更具观赏性的视觉效果
 			await  get_tree().create_timer(0.1).timeout
-			add_new_card(c,scene_3,scene_1)
+			add_new_card(c,scene_3,$Button)
 
 func  get_total_weight(card_dict):
 	var total_weight = 0

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1tubpdp2qpxv"]
+
+[ext_resource type="Script" uid="uid://s8jtxu7qv8sw" path="res://ui/嵌套/pannel.gd" id="1_18bw2"]
+
+[node name="Pannel" type="Panel"]
+custom_minimum_size = Vector2(200, 340)
+offset_right = 240.0
+offset_bottom = 340.0
+script = ExtResource("1_18bw2")
+metadata/_edit_use_anchors_ = true

@@ -3,3 +3,8 @@
 [node name="CardBackground" type="Control"]
 custom_minimum_size = Vector2(240, 340)
 layout_mode = 3
+anchor_right = 0.125
+anchor_bottom = 0.314815
+offset_right = -240.0
+offset_bottom = -340.0
+metadata/_edit_use_anchors_ = true

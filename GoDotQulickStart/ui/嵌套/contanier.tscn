@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://coh457b0ylv8t"]
+
+[ext_resource type="Script" uid="uid://q7vypfhlb6lt" path="res://ui/嵌套/contanier.gd" id="1_6tqa2"]
+
+[node name="Contanier" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6tqa2")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 418.0
+offset_top = 166.0
+offset_right = 1716.0
+offset_bottom = 459.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 381.0
+offset_right = 247.0
+offset_bottom = 469.0
+text = "点击"
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

@@ -1,0 +1,331 @@
+[gd_scene load_steps=14 format=3 uid="uid://dqvfb71jjp6i"]
+
+[ext_resource type="Texture2D" uid="uid://vgecbgwg8vcp" path="res://ui/2_常用control/graphics/texture_09.png" id="2_82ejj"]
+[ext_resource type="Texture2D" uid="uid://b3duaqa1kehfb" path="res://ui/2_常用control/graphics/button_texture.png" id="2_ym0np"]
+[ext_resource type="Texture2D" uid="uid://b82jc83mye0h8" path="res://ui/2_常用control/graphics/button_texture_pressed.png" id="3_weujv"]
+[ext_resource type="Texture2D" uid="uid://h7ryjswjej10" path="res://ui/2_常用control/graphics/button_texture_hover.png" id="4_2rttr"]
+[ext_resource type="Texture2D" uid="uid://ddmrbf182m2w2" path="res://ui/2_常用control/graphics/button_texture_disabled.png" id="5_q85ri"]
+[ext_resource type="Texture2D" uid="uid://ba104l4a7yd47" path="res://ui/2_常用control/graphics/green_progress.png" id="6_iur0b"]
+[ext_resource type="Texture2D" uid="uid://bxyyjlt553t1m" path="res://ui/2_常用control/graphics/panel.png" id="7_5ihda"]
+[ext_resource type="Texture2D" uid="uid://do2v7p1hdd3ee" path="res://ui/2_常用control/graphics/progress_bg.png" id="7_xr1rl"]
+[ext_resource type="Texture2D" uid="uid://cbunjv4pn6ayl" path="res://ui/2_常用control/graphics/prgress_fg.png" id="8_25tvv"]
+[ext_resource type="Texture2D" uid="uid://befulbahgsjd1" path="res://ui/2_常用control/graphics/circular_progress_bg.png" id="9_l2obc"]
+[ext_resource type="Texture2D" uid="uid://daw2bqlgv2q68" path="res://ui/2_常用control/graphics/circular_progress.png" id="9_sri7b"]
+[ext_resource type="PackedScene" path="res://ui/2_常用control/spatial_scene_viewport.tscn" id="13_jfb37"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6iyuo"]
+bg_color = Color(1, 0.268289, 0.60486, 1)
+
+[node name="CommonNodes" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 11.0
+offset_top = 55.0
+offset_right = 11.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 260.0
+offset_bottom = 23.0
+text = "you can type whatever :)"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_top = 30.0
+offset_right = 230.0
+offset_bottom = 75.0
+bbcode_enabled = true
+text = "Here is some [color=green] [wave amp=50.0 freq=5.0 connected=1]fancy[/wave] [/color]text"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_top = 95.0
+offset_right = 230.0
+placeholder_text = "Enter a line here"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_top = 155.0
+offset_right = 230.0
+offset_bottom = 270.0
+text = "over multiple
+lines!"
+placeholder_text = "Enter 
+multiple lines 
+of text here"
+
+[node name="HSeparator" type="HSeparator" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 5.0
+offset_top = 285.0
+offset_right = 230.0
+offset_bottom = 285.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 2.0
+offset_top = 309.0
+offset_right = 247.0
+offset_bottom = 518.0
+texture = ExtResource("2_82ejj")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_top = 555.0
+offset_right = 230.0
+offset_bottom = 585.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6iyuo")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_top = 605.0
+offset_right = 231.0
+offset_bottom = 687.0
+texture = ExtResource("7_5ihda")
+region_rect = Rect2(0, 0, 93, 94)
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 6
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 2
+
+[node name="VSeparator" type="VSeparator" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.05
+anchor_right = 0.2
+anchor_bottom = 0.95
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_right = 0.25
+offset_top = 10.0
+offset_right = 230.0
+offset_bottom = 100.0
+text = "Simple Button"
+
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_right = 0.25
+offset_top = 120.0
+offset_right = 230.0
+offset_bottom = 200.0
+text = "Check button"
+
+[node name="MenuButton" type="MenuButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_right = 0.25
+offset_top = 205.0
+offset_right = 230.0
+offset_bottom = 320.0
+text = "Menu button"
+item_count = 3
+popup/item_0/text = "Item 1"
+popup/item_0/id = 0
+popup/item_1/text = "Item 2"
+popup/item_1/id = 1
+popup/item_2/text = "Item 3"
+popup/item_2/id = 2
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_right = 0.25
+offset_top = 315.0
+offset_right = 230.0
+offset_bottom = 20.0
+selected = 0
+item_count = 2
+popup/item_0/text = "Item 1"
+popup/item_0/id = 0
+popup/item_1/text = "Item 2"
+popup/item_1/id = 1
+
+[node name="TextureButton" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_right = 0.25
+offset_top = 380.0
+offset_right = 100.0
+offset_bottom = 480.0
+texture_normal = ExtResource("2_ym0np")
+texture_pressed = ExtResource("3_weujv")
+texture_hover = ExtResource("4_2rttr")
+texture_disabled = ExtResource("5_q85ri")
+stretch_mode = 0
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_right = 0.25
+offset_top = 500.0
+offset_right = 230.0
+offset_bottom = 600.0
+color = Color(0.796078, 0.862745, 0.105882, 1)
+
+[node name="LinkButton" type="LinkButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_right = 0.25
+offset_top = 630.0
+offset_bottom = 700.0
+text = "Godot website"
+uri = "https://godotengine.org"
+
+[node name="VSeparator2" type="VSeparator" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.05
+anchor_right = 0.5
+anchor_bottom = 0.95
+offset_right = 4.0
+grow_vertical = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.55
+anchor_right = 0.55
+offset_right = 230.0
+offset_bottom = 40.0
+value = 50.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.55
+anchor_right = 0.55
+offset_top = 60.0
+offset_right = 230.0
+offset_bottom = 87.0
+value = 77.0
+nine_patch_stretch = true
+stretch_margin_left = 2
+stretch_margin_top = 2
+stretch_margin_right = 2
+stretch_margin_bottom = 2
+texture_under = ExtResource("7_xr1rl")
+texture_over = ExtResource("8_25tvv")
+texture_progress = ExtResource("6_iur0b")
+
+[node name="TextureProgressBarCircle" type="TextureProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.55
+anchor_right = 0.55
+offset_top = 125.0
+offset_right = 230.0
+offset_bottom = 177.0
+value = 91.0
+fill_mode = 4
+texture_under = ExtResource("9_l2obc")
+texture_progress = ExtResource("9_sri7b")
+
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.55
+anchor_right = 0.55
+offset_top = 350.0
+offset_right = 230.0
+offset_bottom = 360.0
+
+[node name="SpinBox" type="SpinBox" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.55
+anchor_right = 0.55
+offset_top = 395.0
+offset_right = 230.0
+offset_bottom = 31.0
+value = 7.0
+
+[node name="ItemList" type="ItemList" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.55
+anchor_right = 0.55
+offset_top = 465.0
+offset_right = 230.0
+offset_bottom = 635.0
+item_count = 3
+item_0/text = "Item 1"
+item_1/text = "Item 2"
+item_2/text = "Item 3"
+
+[node name="VSeparator3" type="VSeparator" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_top = 0.05
+anchor_right = 0.77
+anchor_bottom = 0.95
+offset_right = 4.0
+grow_vertical = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8
+anchor_right = 0.98
+offset_bottom = 285.0
+stretch = true
+
+[node name="SpatialSceneViewport" parent="SubViewportContainer" instance=ExtResource("13_jfb37")]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(345, 285)
+render_target_update_mode = 4
+
+[node name="ReferenceRect" type="ReferenceRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8
+anchor_right = 0.95
+offset_top = 315.0
+offset_right = 40.0
+offset_bottom = 440.0
+
+[node name="Tree" type="Tree" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8
+anchor_right = 0.8
+offset_top = 480.0
+offset_right = 230.0
+offset_bottom = 700.0
+
+[connection signal="text_changed" from="LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CheckButton" to="." method="_on_check_button_pressed"]
+[connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]

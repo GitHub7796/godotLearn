@@ -50,6 +50,7 @@ func initCard(Nm)->void:
 	cardStackNum=int(cardInfo["base_maxStack"])
 	cardCurrentState=cardState.follwing
 	drawCard()
+	print("Card position after initCard: ", global_position)
 func drawCard()->void:
 	pickButton=$Control/Button
 	var imgPath="res://8_card_demo/gridContanier_demo/assest/"+str(cardName)+".png"

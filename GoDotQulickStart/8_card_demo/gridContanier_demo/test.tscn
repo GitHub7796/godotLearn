@@ -1,6 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://b55vtyrlw5wta"]
+[gd_scene load_steps=4 format=3 uid="uid://b55vtyrlw5wta"]
 
 [ext_resource type="Script" uid="uid://sdel3bs1hkey" path="res://8_card_demo/gridContanier_demo/util/cardInfo.gd" id="1_k1i6o"]
+[ext_resource type="PackedScene" uid="uid://j6aqxnm587t5" path="res://8_card_demo/gridContanier_demo/card.tscn" id="2_hb21q"]
+[ext_resource type="PackedScene" uid="uid://bnc5cvg785g14" path="res://8_card_demo/gridContanier_demo/desk/desk.tscn" id="3_1v8ua"]
 
-[node name="Test" type="Node2D"]
+[node name="Test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_k1i6o")
+metadata/_edit_use_anchors_ = true
+
+[node name="Card" parent="." instance=ExtResource("2_hb21q")]
+layout_mode = 1
+
+[node name="deck" parent="." instance=ExtResource("3_1v8ua")]
+layout_mode = 0
+anchors_preset = 0
