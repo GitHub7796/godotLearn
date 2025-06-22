@@ -1,14 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://cecdocqygjnwa"]
+[gd_scene load_steps=3 format=3 uid="uid://cecdocqygjnwa"]
 
+[ext_resource type="Script" path="res://8_card_demo/control_demo_代码架构梳理后/component/card_compont.gd" id="1_bdfmy"]
 [ext_resource type="Texture2D" uid="uid://bdpcsbmm63b" path="res://icon.svg" id="1_go70o"]
 
-[node name="CardCompont" type="Control" groups=["CardCompont"]]
+[node name="CardCompont" type="Control"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 3
 anchor_right = 0.0520833
 anchor_bottom = 0.0925926
 offset_right = -100.0
 offset_bottom = -100.0
+script = ExtResource("1_bdfmy")
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]

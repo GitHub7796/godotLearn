@@ -13,7 +13,7 @@ var velocity = Vector2.ZERO
 var damping = 0.35
 var stiffness = 500
 func _ready() -> void:
-	set_children_mouse_filter_pass(self)
+	set_children_mouse_filter_pass(get_parent())
 	set_size(Vector2(weight,height))
 
 func _physics_process(delta: float) -> void:

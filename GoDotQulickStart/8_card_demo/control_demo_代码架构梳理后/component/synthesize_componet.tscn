@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc3ckh08fv8jy"]
+
+[ext_resource type="Script" path="res://8_card_demo/control_demo_代码架构梳理后/component/synthesize_componet.gd" id="1_7lb6k"]
+
+[node name="SynthesizeComponet" type="Node2D"]
+script = ExtResource("1_7lb6k")

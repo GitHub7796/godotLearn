@@ -6,25 +6,29 @@
 
 [node name="TestSynthesizeComponet" type="Node2D"]
 
-[node name="DragCompont" parent="." node_paths=PackedStringArray("follow_target", "card") instance=ExtResource("1_cofpv")]
+[node name="Node" type="Node" parent="."]
+
+[node name="CardCompont" parent="Node" instance=ExtResource("2_qvypt")]
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
-follow_target = NodePath("../Control")
-card = NodePath("CardCompont")
+offset_right = 100.0
+offset_bottom = 100.0
 
-[node name="CardCompont" parent="DragCompont" instance=ExtResource("2_qvypt")]
-layout_mode = 1
+[node name="SynthesizeCompont" parent="Node" instance=ExtResource("1_phwad")]
+
+[node name="DragCompont" parent="Node" node_paths=PackedStringArray("follow_target", "card") instance=ExtResource("1_cofpv")]
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_right = -94.7917
-offset_bottom = -90.7407
+offset_right = 100.0
+offset_bottom = 100.0
+follow_target = NodePath("../../Control")
+card = NodePath("../CardCompont")
 
-[node name="SynthesizeCompont" parent="DragCompont/CardCompont" node_paths=PackedStringArray("card") instance=ExtResource("1_phwad")]
-card = NodePath("..")
+[node name="Node2" type="Node" parent="."]
 
-[node name="DragCompont2" parent="." node_paths=PackedStringArray("follow_target", "card") instance=ExtResource("1_cofpv")]
+[node name="CardCompont" parent="Node2" instance=ExtResource("2_qvypt")]
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
@@ -32,19 +36,20 @@ offset_left = 439.0
 offset_top = 236.0
 offset_right = 539.0
 offset_bottom = 336.0
-follow_target = NodePath("../Control2")
-card = NodePath("CardCompont")
 
-[node name="CardCompont" parent="DragCompont2" instance=ExtResource("2_qvypt")]
-layout_mode = 1
+[node name="SynthesizeCompont" parent="Node2" instance=ExtResource("1_phwad")]
+position = Vector2(439, 236)
+
+[node name="DragCompont2" parent="Node2" node_paths=PackedStringArray("follow_target", "card") instance=ExtResource("1_cofpv")]
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_right = -94.7917
-offset_bottom = -90.7407
-
-[node name="SynthesizeCompont" parent="DragCompont2/CardCompont" node_paths=PackedStringArray("card") instance=ExtResource("1_phwad")]
-card = NodePath("..")
+offset_left = 439.0
+offset_top = 236.0
+offset_right = 539.0
+offset_bottom = 336.0
+follow_target = NodePath("../../Control2")
+card = NodePath("../CardCompont")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
