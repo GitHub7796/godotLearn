@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkvl2kaeftjvc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r5k6r"]
+size = Vector2(100, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e5kmv"]
+
+[node name="Test" type="Node"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_r5k6r")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.075
+anchor_top = 0.0564815
+anchor_right = 0.0958333
+anchor_bottom = 0.0935185
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="Control"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Area2D"]
+shape = SubResource("RectangleShape2D_e5kmv")

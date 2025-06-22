@@ -36,6 +36,7 @@ func add_card(cardToAdd:card)->void:
 	print("cardDeck add before:",cardToAdd.global_position)
 	print("2",cardToAdd.size)
 	cardDeck.add_child(cardToAdd)
+	cardToAdd.size=Vector2(240,340)
 	print("3",cardToAdd.size)
 	cardToAdd.global_position=Vector2(0,0)
 	print("4",cardToAdd.size)
