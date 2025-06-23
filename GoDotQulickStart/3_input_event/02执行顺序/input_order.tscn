@@ -89,7 +89,7 @@ position = Vector2(433, 72.5)
 shape = SubResource("RectangleShape2D_6gg0e")
 
 [node name="Area2D2" type="Area2D" parent="."]
-position = Vector2(849, 679)
+position = Vector2(849, 564)
 script = ExtResource("3_j7ffg")
 node_name = "area p2"
 
