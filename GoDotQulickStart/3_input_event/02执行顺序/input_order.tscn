@@ -1,0 +1,116 @@
+[gd_scene load_steps=5 format=3 uid="uid://1hlfxbi2vb23"]
+
+[ext_resource type="Script" uid="uid://detvuctqw31ru" path="res://3_input_event/02执行顺序/print_nm.gd" id="1_mvpkv"]
+[ext_resource type="Script" uid="uid://hpgy1cgmkxyq" path="res://3_input_event/02执行顺序/control.gd" id="2_uew5v"]
+[ext_resource type="Script" uid="uid://ctq63t6g8ya60" path="res://3_input_event/02执行顺序/area_2d.gd" id="3_j7ffg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6gg0e"]
+size = Vector2(886, 165)
+
+[node name="InputOrder" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_mvpkv")
+node_name = "1 p"
+
+[node name="Node2D" type="Node2D" parent="Node2D"]
+script = ExtResource("1_mvpkv")
+node_name = "1 c"
+
+[node name="Node2D2" type="Node2D" parent="."]
+script = ExtResource("1_mvpkv")
+node_name = "2 p"
+
+[node name="Node2D" type="Node2D" parent="Node2D2"]
+script = ExtResource("1_mvpkv")
+node_name = "2 c"
+
+[node name="Control" type="Panel" parent="."]
+custom_minimum_size = Vector2(980, 500)
+offset_left = 12.0
+offset_top = 177.0
+offset_right = 992.0
+offset_bottom = 677.0
+mouse_filter = 1
+script = ExtResource("2_uew5v")
+node_name = "controll p1"
+
+[node name="Control" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("2_uew5v")
+node_name = "controll c1"
+
+[node name="Control2" type="Panel" parent="."]
+custom_minimum_size = Vector2(900, 500)
+offset_top = 580.0
+offset_right = 900.0
+offset_bottom = 1080.0
+mouse_filter = 1
+script = ExtResource("2_uew5v")
+node_name = "controll p2"
+
+[node name="Control" type="Panel" parent="Control2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = 18.0
+offset_right = -3.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("2_uew5v")
+node_name = "controll c2"
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(824, 463)
+script = ExtResource("3_j7ffg")
+node_name = "area p1"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(433, 72.5)
+shape = SubResource("RectangleShape2D_6gg0e")
+
+[node name="Area2D" type="Area2D" parent="Area2D"]
+position = Vector2(6, -17)
+script = ExtResource("3_j7ffg")
+node_name = "area c1"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D/Area2D"]
+position = Vector2(433, 72.5)
+shape = SubResource("RectangleShape2D_6gg0e")
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(849, 679)
+script = ExtResource("3_j7ffg")
+node_name = "area p2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(433, 72.5)
+shape = SubResource("RectangleShape2D_6gg0e")
+
+[node name="Area2D" type="Area2D" parent="Area2D2"]
+position = Vector2(6, 15)
+script = ExtResource("3_j7ffg")
+node_name = "area c2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2/Area2D"]
+position = Vector2(433, 72.5)
+shape = SubResource("RectangleShape2D_6gg0e")
+
+[connection signal="gui_input" from="Control" to="Control" method="_on_control_gui_input"]
+[connection signal="gui_input" from="Control/Control" to="Control/Control" method="_on_control_gui_input"]
+[connection signal="gui_input" from="Control2" to="Control2" method="_on_control_gui_input"]
+[connection signal="gui_input" from="Control2/Control" to="Control2/Control" method="_on_control_gui_input"]
+[connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]
+[connection signal="input_event" from="Area2D/Area2D" to="Area2D/Area2D" method="_on_input_event"]
+[connection signal="input_event" from="Area2D2" to="Area2D2" method="_on_input_event"]
+[connection signal="input_event" from="Area2D2/Area2D" to="Area2D2/Area2D" method="_on_input_event"]

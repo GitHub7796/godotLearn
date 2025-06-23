@@ -46,6 +46,7 @@ func _on_mouse_exited() -> void:
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	# 检查事件是否为鼠标按钮事件
 	if event is InputEventMouseButton:
+		print("InputEventMouseButton")
 		# 判断是否为鼠标左键
 		if event.button_index == MOUSE_BUTTON_LEFT: 
 			if event.is_pressed():

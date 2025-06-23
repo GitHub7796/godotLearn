@@ -39,6 +39,7 @@ func handle_drag(delta: float):
 
 func _on_button_button_down() -> void:
 	button_down_before()
+	print("_on_button_button_down")
 	current_darg_state=DRAG_ENUM.DRAGGING
 	button_down_after()
 	pass # Replace with function body.
