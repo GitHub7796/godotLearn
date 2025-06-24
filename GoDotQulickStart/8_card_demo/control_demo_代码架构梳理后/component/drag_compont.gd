@@ -4,6 +4,7 @@ extends Control
 enum DRAG_ENUM{DRAGGING,FOLLWING}
 @export var follow_target:Node
 @export var card:Control
+@onready var auto_card_component:Control=get_node("../CardCompont")
 ## 宽
 @export var weight:float=100
 ## 高
@@ -13,6 +14,9 @@ var velocity = Vector2.ZERO
 var damping = 0.35
 var stiffness = 500
 func _ready() -> void:
+	if !card && auto_card_component:
+		card=auto_card_component
+#		 @onready 调用前 此函数会调用
 	set_children_mouse_filter_pass(get_parent())
 	set_size(Vector2(weight,height))
 
@@ -56,8 +60,9 @@ func dragging_move_after(delta: float):
 	pass
 func dragging_moveing(delta: float):
 	# 使用全局鼠标位置计算
-	var target_position = get_global_mouse_position() - card.size/2
-	global_position = global_position.lerp(target_position, 0.4)
+	if card:
+		var target_position = get_global_mouse_position() - card.size/2
+		global_position = global_position.lerp(target_position, 0.4)
 func folling_move_before(delta: float):
 	pass
 func folling_move_after(delta: float):

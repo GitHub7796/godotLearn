@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://188puukf1pwc"]
+
+[ext_resource type="Script" uid="uid://dmx6ph6amnvgx" path="res://8_card_demo/control_demo_代码架构梳理后/component/grid_componet.gd" id="1_hnlru"]
+
+[node name="GridComponet" type="GridContainer"]
+anchors_preset = -1
+anchor_right = 0.171875
+anchor_bottom = 0.305556
+offset_right = -330.0
+offset_bottom = -330.0
+script = ExtResource("1_hnlru")
+grid_size = Vector2(100, 100)
+grid_column = 3
+grid_row = 3
+metadata/_edit_use_anchors_ = true

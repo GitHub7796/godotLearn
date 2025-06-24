@@ -11,7 +11,7 @@ anchor_bottom = 0.0925926
 offset_right = -100.0
 offset_bottom = -100.0
 script = ExtResource("1_bdfmy")
-card_name = "Stone"
+card_name = "Ice"
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
