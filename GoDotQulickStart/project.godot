@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 CardInfos="*res://8_card_demo/gridContanier_demo/util/cardInfo.gd"
+AllCardMap="*res://8_card_demo/control_demo_代码架构梳理后/util/cardInfo.gd"
 
 [display]
 
@@ -28,6 +29,8 @@ window/size/viewport_height=1080
 
 cardDropable=""
 CardCompont=""
+g_card=""
+g_card_background=""
 
 [input]
 

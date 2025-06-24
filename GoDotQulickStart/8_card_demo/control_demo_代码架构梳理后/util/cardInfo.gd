@@ -1,6 +1,6 @@
 extends Node
 
-var file_path = "res://8_card_demo/gridContanier_demo/data/cardsInfo.csv"
+var file_path = "res://8_card_demo/control_demo_代码架构梳理后/data/cards.csv"
 var infosDic :Dictionary
 
 func _init() -> void:

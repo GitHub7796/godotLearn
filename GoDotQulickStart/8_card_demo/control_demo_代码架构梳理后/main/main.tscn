@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://8nhibjkl20c7"]
 
-[ext_resource type="PackedScene" uid="uid://188puukf1pwc" path="res://8_card_demo/control_demo_代码架构梳理后/contanier/gridConanier.tscn" id="1_61805"]
+[ext_resource type="PackedScene" uid="uid://188puukf1pwc" path="res://8_card_demo/control_demo_代码架构梳理后/component/grid_componet.tscn" id="1_61805"]
 
 [node name="Main" type="Control"]
 layout_mode = 3

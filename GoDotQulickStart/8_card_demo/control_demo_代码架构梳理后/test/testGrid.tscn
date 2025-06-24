@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://coyua4h7anlwt"]
+
+[ext_resource type="PackedScene" uid="uid://188puukf1pwc" path="res://8_card_demo/control_demo_代码架构梳理后/component/grid_componet.tscn" id="1_fv73h"]
+[ext_resource type="Script" uid="uid://bx1lqp3wehgsw" path="res://8_card_demo/control_demo_代码架构梳理后/test/test_grid.gd" id="1_r8oij"]
+
+[node name="TestGrid" type="Node2D"]
+script = ExtResource("1_r8oij")
+
+[node name="GridComponet" parent="." instance=ExtResource("1_fv73h")]
+offset_left = 742.0
+offset_top = 354.0
+offset_right = 742.0
+offset_bottom = 354.0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

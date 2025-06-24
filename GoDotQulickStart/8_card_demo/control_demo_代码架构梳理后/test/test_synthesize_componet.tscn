@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnxp1bnq6f20k"]
+
+[ext_resource type="PackedScene" uid="uid://cecdocqygjnwa" path="res://8_card_demo/control_demo_代码架构梳理后/component/cardCompont.tscn" id="1_atau8"]
+[ext_resource type="PackedScene" uid="uid://dp02kkj6ungqb" path="res://8_card_demo/control_demo_代码架构梳理后/component/area_componet.tscn" id="2_0se34"]
+[ext_resource type="PackedScene" uid="uid://by1ui61rpl6m0" path="res://8_card_demo/control_demo_代码架构梳理后/component/dragCompont.tscn" id="3_7danm"]
+
+[node name="TestSynthesizeComponet" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 769.0
+offset_top = 386.0
+offset_right = 809.0
+offset_bottom = 426.0
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Node" type="Node" parent="."]
+
+[node name="CardCompont" parent="Node" instance=ExtResource("1_atau8")]
+
+[node name="AreaComponet" parent="Node" instance=ExtResource("2_0se34")]
+
+[node name="DragCompont" parent="Node" node_paths=PackedStringArray("follow_target", "card") instance=ExtResource("3_7danm")]
+follow_target = NodePath("../../Control")
+card = NodePath("../CardCompont")
+
+[node name="Node2" type="Node" parent="."]
+
+[node name="CardCompont" parent="Node2" instance=ExtResource("1_atau8")]
+
+[node name="AreaComponet" parent="Node2" instance=ExtResource("2_0se34")]
+
+[node name="DragCompont" parent="Node2" node_paths=PackedStringArray("follow_target", "card") instance=ExtResource("3_7danm")]
+follow_target = NodePath("../../Control2")
+card = NodePath("../CardCompont")
