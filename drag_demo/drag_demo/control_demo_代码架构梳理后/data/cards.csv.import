@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b4q21frsrkxab"
+
+[deps]
+
+files=["res://control_demo_代码架构梳理后/data/cards.index.translation", "res://control_demo_代码架构梳理后/data/cards.displayName.translation"]
+
+source_file="res://control_demo_代码架构梳理后/data/cards.csv"
+dest_files=["res://control_demo_代码架构梳理后/data/cards.index.translation", "res://control_demo_代码架构梳理后/data/cards.displayName.translation"]
+
+[params]
+
+compress=true
+delimiter=0

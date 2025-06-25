@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://cebrp7dc6bpol"]
+[gd_scene load_steps=7 format=3 uid="uid://cebrp7dc6bpol"]
 
 [ext_resource type="PackedScene" uid="uid://by1ui61rpl6m0" path="res://8_card_demo/control_demo_代码架构梳理后/component/dragCompont.tscn" id="1_1dahm"]
 [ext_resource type="Script" uid="uid://b1p7o67d1es8c" path="res://8_card_demo/control_demo_代码架构梳理后/card/card.gd" id="1_k0hqn"]
 [ext_resource type="PackedScene" uid="uid://cecdocqygjnwa" path="res://8_card_demo/control_demo_代码架构梳理后/component/cardCompont.tscn" id="2_1dahm"]
+[ext_resource type="Script" uid="uid://c6blw5hsusuxl" path="res://9_其他/_process执行顺序/node2.gd" id="3_5f24e"]
 [ext_resource type="PackedScene" uid="uid://dp02kkj6ungqb" path="res://8_card_demo/control_demo_代码架构梳理后/component/area_componet.tscn" id="3_8nmfd"]
+[ext_resource type="Script" uid="uid://bx37n6hdajsq7" path="res://9_其他/_process执行顺序/node3.gd" id="4_wvagq"]
 
 [node name="Card" type="Control"]
 custom_minimum_size = Vector2(110, 110)
@@ -16,6 +18,12 @@ metadata/_edit_use_anchors_ = true
 [node name="CardCompont" parent="." instance=ExtResource("2_1dahm")]
 layout_mode = 1
 
+[node name="Node" type="Node" parent="CardCompont"]
+script = ExtResource("3_5f24e")
+
+[node name="Node" type="Node" parent="CardCompont/Node"]
+script = ExtResource("4_wvagq")
+
 [node name="AreaComponet" parent="." instance=ExtResource("3_8nmfd")]
 
 [node name="DragCompont" parent="." instance=ExtResource("1_1dahm")]
@@ -23,3 +31,4 @@ layout_mode = 0
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
+mouse_filter = 1

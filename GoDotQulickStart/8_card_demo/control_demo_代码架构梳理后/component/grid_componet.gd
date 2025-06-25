@@ -25,7 +25,8 @@ func init():
 	for i in range(total):
 		#var grid_cotent=grid_cotent.init(grid_size)
 		var grid_cotent=Panel.new()
-		var card_background=CardBackgroundComponet.new()
+		#var card_background=CardBackgroundComponet.new()
+		var card_background=load("res://8_card_demo/control_demo_代码架构梳理后/component/card_background_componet.tscn").instantiate()
 		grid_cotent.add_child(card_background)
 		grid_cotent.custom_minimum_size=grid_size
 		grid_componet.add_child(grid_cotent)

@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://8nhibjkl20c7"]
+
+[ext_resource type="PackedScene" uid="uid://188puukf1pwc" path="res://8_card_demo/control_demo_代码架构梳理后/component/grid_componet.tscn" id="1_61805"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridConanier" parent="." instance=ExtResource("1_61805")]
+layout_mode = 1
+anchor_left = 0.319792
+anchor_top = 0.146296
+anchor_right = 0.667708
+anchor_bottom = 0.764815

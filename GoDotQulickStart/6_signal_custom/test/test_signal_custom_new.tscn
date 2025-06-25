@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c60wuon3nuere"]
+
+[ext_resource type="Script" uid="uid://c3iu6uqgt8fu8" path="res://6_signal_custom/test/test_signal_custom_new.gd" id="1_ihqai"]
+[ext_resource type="Script" uid="uid://dv8wkan34deui" path="res://6_signal_custom/test/label.gd" id="2_limp0"]
+
+[node name="TestSignalCustomNew" type="Button"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ihqai")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 387.0
+offset_right = 917.0
+offset_bottom = 602.0
+script = ExtResource("2_limp0")
+
+[connection signal="add" from="." to="Label" method="_on_test_signal_custom_new_add"]
+[connection signal="button_down" from="." to="." method="_on_button_down"]

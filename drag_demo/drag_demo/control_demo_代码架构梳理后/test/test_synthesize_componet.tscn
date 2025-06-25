@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnxp1bnq6f20k"]
+
+[ext_resource type="PackedScene" uid="uid://cebrp7dc6bpol" path="res://control_demo_代码架构梳理后/card/card.tscn" id="1_usdv0"]
+
+[node name="TestSynthesizeComponet" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 769.0
+offset_top = 386.0
+offset_right = 809.0
+offset_bottom = 426.0
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Card" parent="." instance=ExtResource("1_usdv0")]
+
+[node name="Card2" parent="." instance=ExtResource("1_usdv0")]

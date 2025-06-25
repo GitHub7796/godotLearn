@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://1hlfxbi2vb23"]
+[gd_scene load_steps=6 format=3 uid="uid://1hlfxbi2vb23"]
 
 [ext_resource type="Script" uid="uid://detvuctqw31ru" path="res://3_input_event/02执行顺序/print_nm.gd" id="1_mvpkv"]
 [ext_resource type="Script" uid="uid://hpgy1cgmkxyq" path="res://3_input_event/02执行顺序/control.gd" id="2_uew5v"]
 [ext_resource type="Script" uid="uid://ctq63t6g8ya60" path="res://3_input_event/02执行顺序/area_2d.gd" id="3_j7ffg"]
+[ext_resource type="Script" uid="uid://dllkn574q845m" path="res://3_input_event/02执行顺序/button.gd" id="4_6gg0e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6gg0e"]
 size = Vector2(886, 165)
@@ -70,6 +71,14 @@ mouse_filter = 1
 script = ExtResource("2_uew5v")
 node_name = "controll c2"
 
+[node name="Button" type="Button" parent="."]
+offset_left = 858.0
+offset_top = 275.0
+offset_right = 1449.0
+offset_bottom = 495.0
+mouse_filter = 1
+script = ExtResource("4_6gg0e")
+
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(824, 463)
 script = ExtResource("3_j7ffg")
@@ -110,6 +119,8 @@ shape = SubResource("RectangleShape2D_6gg0e")
 [connection signal="gui_input" from="Control/Control" to="Control/Control" method="_on_control_gui_input"]
 [connection signal="gui_input" from="Control2" to="Control2" method="_on_control_gui_input"]
 [connection signal="gui_input" from="Control2/Control" to="Control2/Control" method="_on_control_gui_input"]
+[connection signal="button_down" from="Button" to="Button" method="_on_button_down"]
+[connection signal="button_up" from="Button" to="Button" method="_on_button_up"]
 [connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]
 [connection signal="input_event" from="Area2D/Area2D" to="Area2D/Area2D" method="_on_input_event"]
 [connection signal="input_event" from="Area2D2" to="Area2D2" method="_on_input_event"]

@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://cebrp7dc6bpol"]
+
+[ext_resource type="PackedScene" uid="uid://by1ui61rpl6m0" path="res://control_demo_代码架构梳理后/component/dragCompont.tscn" id="1_1dahm"]
+[ext_resource type="Script" uid="uid://b1p7o67d1es8c" path="res://control_demo_代码架构梳理后/card/card.gd" id="1_k0hqn"]
+[ext_resource type="PackedScene" uid="uid://cecdocqygjnwa" path="res://control_demo_代码架构梳理后/component/cardCompont.tscn" id="2_1dahm"]
+[ext_resource type="PackedScene" uid="uid://dp02kkj6ungqb" path="res://control_demo_代码架构梳理后/component/area_componet.tscn" id="3_8nmfd"]
+[ext_resource type="Script" uid="uid://c028hh6oiphsd" path="res://control_demo_代码架构梳理后/card/synthesize.gd" id="5_t2y8e"]
+
+[node name="Card" type="Control"]
+custom_minimum_size = Vector2(110, 110)
+layout_mode = 3
+anchor_right = 0.0572917
+anchor_bottom = 0.101852
+script = ExtResource("1_k0hqn")
+metadata/_edit_use_anchors_ = true
+
+[node name="CardCompont" parent="." instance=ExtResource("2_1dahm")]
+layout_mode = 1
+
+[node name="DragCompont" parent="." instance=ExtResource("1_1dahm")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+mouse_filter = 1
+
+[node name="AreaComponet" parent="." instance=ExtResource("3_8nmfd")]
+
+[node name="handle_synthesize" type="Node" parent="."]
+script = ExtResource("5_t2y8e")
+
+[connection signal="sgl_synthesize" from="AreaComponet" to="handle_synthesize" method="_on_area_componet_sgl_synthesize"]

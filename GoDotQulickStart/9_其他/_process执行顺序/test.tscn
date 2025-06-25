@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://vivud5qxamua"]
+
+[ext_resource type="Script" uid="uid://qe7muec5joa8" path="res://9_其他/_process执行顺序/test.gd" id="1_ig7c7"]
+
+[node name="Test" type="Node2D"]
+script = ExtResource("1_ig7c7")
+node_name = "f1"
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("1_ig7c7")
+node_name = "p1"
+
+[node name="Node" type="Node" parent="Node"]
+script = ExtResource("1_ig7c7")
+node_name = "c1"
+
+[node name="Node2" type="Node" parent="."]
+script = ExtResource("1_ig7c7")
+node_name = "p2"
+
+[node name="Node" type="Node" parent="Node2"]
+script = ExtResource("1_ig7c7")
+node_name = "c2"

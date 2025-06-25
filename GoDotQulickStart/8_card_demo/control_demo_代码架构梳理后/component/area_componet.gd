@@ -29,6 +29,7 @@ func _on_area_entered(area: Area2D) -> void:
 
 
 func _on_area_exited(area: Area2D) -> void:
+	print("area_exited",self)
 	is_area_enter=false
 	pass # Replace with function body.
 
@@ -40,6 +41,7 @@ func _on_mouse_entered() -> void:
 
 
 func _on_mouse_exited() -> void:
+	print("mouse_exited",self)
 	is_mouse_enter=false
 	pass # Replace with function body.
 

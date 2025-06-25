@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://djvbpvi1ck082"]
+
+[ext_resource type="Script" uid="uid://d0hgjo85b0a8x" path="res://control_demo_代码架构梳理后/component/card_background_componet.gd" id="1_owc7p"]
+
+[node name="CardBackgroundComponet" type="Control" groups=["g_card_background"]]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_owc7p")
+min_size = Vector2(110, 110)

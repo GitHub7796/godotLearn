@@ -20,4 +20,11 @@ func _unhandled_key_input(event: InputEvent) -> void:
 
 
 func _on_control_2_gui_input(event: InputEvent) -> void:
+		if event is InputEventMouseButton:
+			if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+				print("_on_control_2_gui_input:",node_name)
+
+
+func _on_button_button_down() -> void:
+	print("_on_button_button_down:",node_name)
 	pass # Replace with function body.
