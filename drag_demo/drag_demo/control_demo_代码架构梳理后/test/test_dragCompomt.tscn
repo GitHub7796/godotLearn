@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c4dc8euqt23wf"]
 
-[ext_resource type="PackedScene" uid="uid://by1ui61rpl6m0" path="res://8_card_demo/control_demo_代码架构梳理后/component/dragCompont.tscn" id="1_df2ii"]
+[ext_resource type="PackedScene" uid="uid://by1ui61rpl6m0" path="res://control_demo_代码架构梳理后/component/dragCompont.tscn" id="1_df2ii"]
 
 [node name="TestDragCompomt" type="Control"]
 layout_mode = 3

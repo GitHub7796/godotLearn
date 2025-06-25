@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 AllCardMap="*res://control_demo_代码架构梳理后/util/cardInfo.gd"
+State="*res://control_demo_代码架构梳理后/util/state.gd"
 
 [display]
 

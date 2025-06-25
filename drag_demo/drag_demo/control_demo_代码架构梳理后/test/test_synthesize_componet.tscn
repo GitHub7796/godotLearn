@@ -17,9 +17,15 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 158.0
+offset_top = 115.0
+offset_right = 158.0
+offset_bottom = 115.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Card" parent="." instance=ExtResource("1_usdv0")]
+[node name="Card" parent="." node_paths=PackedStringArray("follow_target") instance=ExtResource("1_usdv0")]
+follow_target = NodePath("../Control")
 
-[node name="Card2" parent="." instance=ExtResource("1_usdv0")]
+[node name="Card2" parent="." node_paths=PackedStringArray("follow_target") instance=ExtResource("1_usdv0")]
+follow_target = NodePath("../Control2")

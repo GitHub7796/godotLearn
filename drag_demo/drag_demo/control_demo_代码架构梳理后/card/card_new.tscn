@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bbw88s40rfiwe"]
+
+[node name="CardNew" type="Control"]
+custom_minimum_size = Vector2(110, 110)
+layout_mode = 3
+anchor_right = 0.0572917
+anchor_bottom = 0.101852
+offset_right = -110.0
+offset_bottom = -110.0
+metadata/_edit_use_anchors_ = true
