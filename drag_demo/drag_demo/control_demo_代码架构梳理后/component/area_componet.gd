@@ -1,6 +1,6 @@
 extends Node
 class_name AreaComponet
-signal sgl_synthesize
+
 
 var is_area_enter:bool=false
 var is_mouse_enter:bool=false
@@ -20,7 +20,7 @@ func sgl_synthesize_emit():
 	if State.is_left_mouse_press_up:
 		print("sgl_synthesize_emit 1")
 		add_to_group("g_synthesize")
-		sgl_synthesize.emit()
+		SignalBus.sgl_synthesize.emit($"../DragCompont".follow_target)
 	pass
 
 func _on_area_entered(area: Area2D) -> void:

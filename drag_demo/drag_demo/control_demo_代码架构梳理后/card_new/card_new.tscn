@@ -1,0 +1,77 @@
+[gd_scene load_steps=9 format=3 uid="uid://bbw88s40rfiwe"]
+
+[ext_resource type="Script" uid="uid://b2a3ig45peymw" path="res://control_demo_代码架构梳理后/card_new/card_new.gd" id="1_838ja"]
+[ext_resource type="Theme" uid="uid://dmwi0iirh8y4l" path="res://control_demo_代码架构梳理后/component/dragCompont.tres" id="1_srtvv"]
+[ext_resource type="Texture2D" uid="uid://boyrbk83litlt" path="res://icon.svg" id="2_rbanf"]
+[ext_resource type="Script" uid="uid://bhiqdx84pqg3p" path="res://状态机/state_mechine.gd" id="3_hge3w"]
+[ext_resource type="Script" uid="uid://cn1wbbqqaow5x" path="res://control_demo_代码架构梳理后/card_new/dragging.gd" id="4_2xw75"]
+[ext_resource type="Script" uid="uid://cnkox1ngdr5p0" path="res://control_demo_代码架构梳理后/card_new/following.gd" id="5_7d57w"]
+[ext_resource type="Script" uid="uid://3uk421drnxnd" path="res://control_demo_代码架构梳理后/card_new/hovering.gd" id="6_7d57w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hge3w"]
+size = Vector2(120, 120)
+
+[node name="CardNew" type="Control" groups=["group_card"]]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 3
+anchor_right = 0.0625
+anchor_bottom = 0.111111
+offset_right = -120.0
+offset_bottom = -120.0
+mouse_filter = 1
+script = ExtResource("1_838ja")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme = ExtResource("1_srtvv")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_rbanf")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(60, 60)
+shape = SubResource("RectangleShape2D_hge3w")
+
+[node name="State" type="Node" parent="."]
+script = ExtResource("3_hge3w")
+
+[node name="dragging" type="Node" parent="State"]
+script = ExtResource("4_2xw75")
+
+[node name="following" type="Node" parent="State"]
+script = ExtResource("5_7d57w")
+
+[node name="hovering" type="Node" parent="State"]
+script = ExtResource("6_7d57w")
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

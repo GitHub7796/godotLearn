@@ -11,3 +11,9 @@ func _ready() -> void:
 	$Control.add_child(card2)
 	card1.set_follow_target(background)
 	card2.set_follow_target(background1)
+	SignalBus.sgl_synthesize.connect(add_card)
+func add_card(follw_target:Node):
+	var card=load("res://control_demo_代码架构梳理后/card/card.tscn").instantiate()
+	card.init_card("Silicon_ore")
+	$Control.add_child(card)
+	card.set_follow_target(follw_target)

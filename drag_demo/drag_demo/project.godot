@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 
 AllCardMap="*res://control_demo_代码架构梳理后/util/cardInfo.gd"
 State="*res://control_demo_代码架构梳理后/util/state.gd"
+SignalBus="*res://control_demo_代码架构梳理后/util/signal_bus.gd"
 
 [display]
 
@@ -27,3 +28,4 @@ window/size/viewport_height=1080
 [global_group]
 
 g_synthesize=""
+group_card=""
