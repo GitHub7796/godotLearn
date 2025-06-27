@@ -8,8 +8,11 @@ custom_minimum_size = Vector2(100, 100)
 anchors_preset = -1
 anchor_right = 0.0520833
 anchor_bottom = 0.0925926
+offset_right = -6.86646e-05
 theme = ExtResource("1_i3aj6")
 script = ExtResource("1_b6gv6")
+weight = 120.0
+height = 120.0
 metadata/_edit_use_anchors_ = true
 
 [connection signal="button_down" from="." to="." method="_on_button_button_down"]

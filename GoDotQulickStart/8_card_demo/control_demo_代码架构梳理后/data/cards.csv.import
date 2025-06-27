@@ -3,11 +3,13 @@
 importer="csv_translation"
 type="Translation"
 uid="uid://b4q21frsrkxab"
-valid=false
 
 [deps]
 
+files=["res://8_card_demo/control_demo_代码架构梳理后/data/cards.index.translation", "res://8_card_demo/control_demo_代码架构梳理后/data/cards.displayName.translation"]
+
 source_file="res://8_card_demo/control_demo_代码架构梳理后/data/cards.csv"
+dest_files=["res://8_card_demo/control_demo_代码架构梳理后/data/cards.index.translation", "res://8_card_demo/control_demo_代码架构梳理后/data/cards.displayName.translation"]
 
 [params]
 

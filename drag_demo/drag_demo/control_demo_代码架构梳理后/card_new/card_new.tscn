@@ -22,17 +22,6 @@ mouse_filter = 1
 script = ExtResource("1_838ja")
 metadata/_edit_use_anchors_ = true
 
-[node name="Button" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 1
-theme = ExtResource("1_srtvv")
-metadata/_edit_use_anchors_ = true
-
 [node name="TextureRect" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 1
@@ -57,6 +46,17 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(60, 60)
 shape = SubResource("RectangleShape2D_hge3w")
 
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme = ExtResource("1_srtvv")
+metadata/_edit_use_anchors_ = true
+
 [node name="State" type="Node" parent="."]
 script = ExtResource("3_hge3w")
 
@@ -69,9 +69,9 @@ script = ExtResource("5_7d57w")
 [node name="hovering" type="Node" parent="State"]
 script = ExtResource("6_7d57w")
 
-[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
-[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

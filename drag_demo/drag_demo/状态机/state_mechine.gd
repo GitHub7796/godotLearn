@@ -8,7 +8,7 @@ func _ready() -> void:
 	for child in get_children():
 		if child is Card_State:
 			card_state_dict[child.name.to_lower()] = child
-			SignalBus.sgl_transition.connect(child_state_transition)
+			child.sgl_transition.connect(child_state_transition)
 	if init_state:
 		init_state.enter()
 		current_state=init_state

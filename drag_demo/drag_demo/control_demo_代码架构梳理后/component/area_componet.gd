@@ -17,10 +17,10 @@ func _physics_process(delta: float) -> void:
 
 func sgl_synthesize_emit():
 	#if is_area_enter && is_mouse_enter && State.is_left_mouse_press_up:
-	if State.is_left_mouse_press_up:
-		print("sgl_synthesize_emit 1")
-		add_to_group("g_synthesize")
-		SignalBus.sgl_synthesize.emit($"../DragCompont".follow_target)
+	#if State.is_left_mouse_press_up:
+		#print("sgl_synthesize_emit 1")
+		#add_to_group("g_synthesize")
+		#SignalBus.sgl_synthesize.emit($"../DragCompont".follow_target)
 	pass
 
 func _on_area_entered(area: Area2D) -> void:
