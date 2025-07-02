@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://b2a3ig45peymw" path="res://control_demo_代码架构梳理后/card_new/card_new.gd" id="1_838ja"]
 [ext_resource type="Theme" uid="uid://dmwi0iirh8y4l" path="res://control_demo_代码架构梳理后/component/dragCompont.tres" id="1_srtvv"]
+[ext_resource type="Script" path="res://control_demo_代码架构梳理后/card_new/color_rect.gd" id="2_pwuf1"]
 [ext_resource type="Texture2D" uid="uid://boyrbk83litlt" path="res://icon.svg" id="2_rbanf"]
 [ext_resource type="Script" uid="uid://bhiqdx84pqg3p" path="res://状态机/state_mechine.gd" id="3_hge3w"]
 [ext_resource type="Script" uid="uid://cn1wbbqqaow5x" path="res://control_demo_代码架构梳理后/card_new/dragging.gd" id="4_2xw75"]
 [ext_resource type="Script" uid="uid://cnkox1ngdr5p0" path="res://control_demo_代码架构梳理后/card_new/following.gd" id="5_7d57w"]
 [ext_resource type="Script" uid="uid://3uk421drnxnd" path="res://control_demo_代码架构梳理后/card_new/hovering.gd" id="6_7d57w"]
-[ext_resource type="Script" uid="uid://dh5532otjvvkl" path="res://control_demo_代码架构梳理后/card_new/clickable.gd" id="8_pwuf1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hge3w"]
 size = Vector2(120, 120)
@@ -21,18 +21,16 @@ offset_right = -120.0
 offset_bottom = -120.0
 mouse_filter = 1
 script = ExtResource("1_838ja")
-is_card_dragable = true
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.0583333
+layout_mode = 0
+anchor_left = 0.0333333
 anchor_top = 0.166667
-anchor_right = 0.941667
-anchor_bottom = 0.95
-mouse_filter = 1
-color = Color(0.188371, 0.188371, 0.188371, 1)
+anchor_right = 0.958333
+anchor_bottom = 0.975
+color = Color(0.286684, 0.286684, 0.286684, 1)
+script = ExtResource("2_pwuf1")
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -82,9 +80,6 @@ script = ExtResource("5_7d57w")
 
 [node name="hovering" type="Node" parent="State"]
 script = ExtResource("6_7d57w")
-
-[node name="clickable" type="Node" parent="State"]
-script = ExtResource("8_pwuf1")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
