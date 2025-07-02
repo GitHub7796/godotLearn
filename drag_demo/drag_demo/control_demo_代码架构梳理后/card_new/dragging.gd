@@ -5,9 +5,9 @@ func enter():
 	pass
 func exit():
 	pass
-func _process(delta: float) -> void:
+func Update(delta: float) -> void:
 	pass
-func _physics_process(delta: float) -> void:
+func Pysics_Update(delta: float) -> void:
 	if !card.is_button_down:
 		sgl_transition.emit(self,"following")
 	else:

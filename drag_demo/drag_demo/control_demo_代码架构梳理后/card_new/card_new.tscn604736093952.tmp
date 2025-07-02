@@ -1,8 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bbw88s40rfiwe"]
+[gd_scene load_steps=9 format=3 uid="uid://bbw88s40rfiwe"]
 
 [ext_resource type="Script" uid="uid://b2a3ig45peymw" path="res://control_demo_代码架构梳理后/card_new/card_new.gd" id="1_838ja"]
 [ext_resource type="Theme" uid="uid://dmwi0iirh8y4l" path="res://control_demo_代码架构梳理后/component/dragCompont.tres" id="1_srtvv"]
-[ext_resource type="Script" uid="uid://brpstdpxln1" path="res://control_demo_代码架构梳理后/card_new/color_rect.gd" id="2_pwuf1"]
 [ext_resource type="Texture2D" uid="uid://boyrbk83litlt" path="res://icon.svg" id="2_rbanf"]
 [ext_resource type="Script" uid="uid://bhiqdx84pqg3p" path="res://状态机/state_mechine.gd" id="3_hge3w"]
 [ext_resource type="Script" uid="uid://cn1wbbqqaow5x" path="res://control_demo_代码架构梳理后/card_new/dragging.gd" id="4_2xw75"]
@@ -29,8 +28,7 @@ anchor_left = 0.0333333
 anchor_top = 0.166667
 anchor_right = 0.958333
 anchor_bottom = 0.975
-color = Color(0.286684, 0.286684, 0.286684, 1)
-script = ExtResource("2_pwuf1")
+color = Color(0.187176, 0.187176, 0.187176, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -68,9 +66,8 @@ mouse_filter = 1
 theme = ExtResource("1_srtvv")
 metadata/_edit_use_anchors_ = true
 
-[node name="State" type="Node" parent="." node_paths=PackedStringArray("init_state")]
+[node name="State" type="Node" parent="."]
 script = ExtResource("3_hge3w")
-init_state = NodePath("following")
 
 [node name="dragging" type="Node" parent="State"]
 script = ExtResource("4_2xw75")

@@ -14,10 +14,10 @@ func _ready() -> void:
 		current_state=init_state
 func _process(delta: float) -> void:
 	if current_state:
-		current_state._process(delta)
+		current_state.Update(delta)
 func _physics_process(delta: float) -> void:
 	if current_state:
-		current_state._physics_process(delta)
+		current_state.Pysics_Update(delta)
 func child_state_transition(state,new_state_name:String):
 	if state!=current_state:
 		return

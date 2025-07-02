@@ -6,7 +6,9 @@ func enter():
 	pass
 func exit():
 	pass
-func _process(delta: float) -> void:
+## 不可使用 _physics_process、_physics
+func Update(delta: float) -> void:
 	pass
-func _physics_process(delta: float) -> void:
+## 不可使用 _physics_process、_physics
+func Pysics_Update(delta: float) -> void:
 	pass

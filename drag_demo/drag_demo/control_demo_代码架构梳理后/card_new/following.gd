@@ -6,11 +6,13 @@ func enter():
 	pass
 func exit():
 	pass
-func _process(delta: float) -> void:
+func Update(delta: float) -> void:
 	pass
-func _physics_process(delta: float) -> void:
+func Pysics_Update(delta: float) -> void:
 	if card.is_button_down:
 		sgl_transition.emit(self,"dragging")
+	elif card.is_mouse_enter:
+		sgl_transition.emit(self,"hovering")
 	else:
 		var target_position
 		if card.follow_target:

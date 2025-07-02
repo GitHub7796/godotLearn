@@ -27,7 +27,10 @@ offset_bottom = -199.815
 layout_mode = 1
 anchor_right = 0.999999
 anchor_bottom = 0.999999
+offset_right = 0.0
 mouse_filter = 1
+weight = 100.0
+height = 100.0
 
 [node name="AreaComponet" parent="." instance=ExtResource("3_8nmfd")]
 
