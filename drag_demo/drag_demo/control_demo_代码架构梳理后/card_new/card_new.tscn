@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://cn1wbbqqaow5x" path="res://control_demo_代码架构梳理后/card_new/dragging.gd" id="4_2xw75"]
 [ext_resource type="Script" uid="uid://cnkox1ngdr5p0" path="res://control_demo_代码架构梳理后/card_new/following.gd" id="5_7d57w"]
 [ext_resource type="Script" uid="uid://3uk421drnxnd" path="res://control_demo_代码架构梳理后/card_new/hovering.gd" id="6_7d57w"]
-[ext_resource type="Script" uid="uid://dh5532otjvvkl" path="res://control_demo_代码架构梳理后/card_new/clickable.gd" id="8_pwuf1"]
+[ext_resource type="Script" path="res://control_demo_代码架构梳理后/card_new/clickable.gd" id="8_pwuf1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hge3w"]
 size = Vector2(120, 120)
@@ -27,12 +27,12 @@ metadata/_edit_use_anchors_ = true
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0583333
-anchor_top = 0.166667
-anchor_right = 0.941667
-anchor_bottom = 0.95
+anchor_left = 0.025
+anchor_top = 0.158333
+anchor_right = 0.975
+anchor_bottom = 0.966667
 mouse_filter = 1
-color = Color(0.188371, 0.188371, 0.188371, 1)
+color = Color(0, 0, 0, 0.337255)
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
